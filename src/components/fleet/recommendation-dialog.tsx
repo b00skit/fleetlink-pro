@@ -47,10 +47,10 @@ export function RecommendationDialog({
     setRecommendations(null);
     try {
       const result = await getRecommendations({
-        allVehicleIds: allVehicles.map((v) => v.id),
-        allAssignmentIds: allAssignments.map((a) => a.id),
-        favoriteVehicleIds: favoriteVehicles.map((v) => v.id),
-        favoriteAssignmentIds: favoriteAssignments.map((a) => a.id),
+        allVehicles: allVehicles.map((v) => v.id),
+        allAssignments: allAssignments.map((a) => a.id),
+        favoriteVehicles: favoriteVehicles.map((v) => v.id),
+        favoriteAssignments: favoriteAssignments.map((a) => a.id),
       });
       setRecommendations(result);
     } catch (error) {
@@ -129,7 +129,7 @@ export function RecommendationDialog({
           )}
         </div>
         <DialogFooter>
-          <Button onClick={handleGetRecommendations} disabled={isLoading}>
+          <Button onClick={handleGetRecommendations} disabled={isLoading || favoriteVehicles.length === 0 && favoriteAssignments.length === 0}>
             {isLoading ? (
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
             ) : (

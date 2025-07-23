@@ -47,4 +47,25 @@ const prompt = ai.definePrompt({
   Output the lists as simple javascript arrays with double quotes surrounding each element. 
 
   For example:
-  \nReasoning: The user likes Vans and Trucks, so based on what they like they might also like Utility Vehicles and Buses.\nRecommended Vehicles: [\
+  \nReasoning: The user likes Vans and Trucks, so based on what they like they might also like Utility Vehicles and Buses.\nRecommended Vehicles: []\nRecommended Assignments: []`
+});
+
+const recommendVehiclesAssignmentsFlow = ai.defineFlow(
+  {
+    name: 'recommendVehiclesAssignmentsFlow',
+    inputSchema: RecommendVehiclesAssignmentsInputSchema,
+    outputSchema: RecommendVehiclesAssignmentsOutputSchema,
+  },
+  async (input) => {
+    // Filter out favorited items from the general pool before sending to the model
+    const availableVehicles = input.allVehicles.filter(v => !input.favoriteVehicles.includes(v));
+    const availableAssignments = input.allAssignments.filter(a => !input.favoriteAssignments.includes(a));
+
+    const {output} = await prompt({
+        ...input,
+        allVehicles: availableVehicles,
+        allAssignments: availableAssignments,
+    });
+    return output!;
+  }
+);
