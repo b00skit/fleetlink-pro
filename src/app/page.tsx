@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useMemo, useEffect } from "react";
@@ -199,66 +200,38 @@ export default function Home() {
     const prefix = selectedAssignment;
     const vehiclesInAssignment = fleetData.vehicles.filter(v => {
         const platePrefix = v.plate.substring(0, 3);
-        const olMatch = !v.ol || v.ol === prefix;
-        return platePrefix === prefix && olMatch;
+        const olMatch = v.ol === prefix;
+        return olMatch || platePrefix === prefix;
     });
 
     return [...new Set(vehiclesInAssignment.map(v => v.makeModel))].sort();
   }, [selectedAssignment, fleetData]);
 
-  const filteredMainData = useMemo(() => {
-    if (!fleetData) return [];
-    
-    let data = fleetData.vehicles;
-    const assignmentId = activeAssignmentPill || (selectedAssignment !== ANY_VALUE ? selectedAssignment : null);
-
-    if (assignmentId) {
-        const prefix = assignmentId;
-        data = data.filter(v => {
-            const platePrefix = v.plate.substring(0, 3);
-            const olMatch = !v.ol || v.ol === prefix;
-            return platePrefix === prefix && olMatch;
-        });
-
-        if (selectedVehicle && selectedVehicle !== ANY_VALUE && !activeAssignmentPill) {
-            data = data.filter(v => v.makeModel === selectedVehicle);
-        }
-    } else if (favoriteVehicles.length > 0) {
-        // Default to showing favorite vehicles if no assignment is selected
-        return [];
-    }
-     else {
-        return [];
-    }
-
-    return data;
-  }, [fleetData, selectedAssignment, selectedVehicle, activeAssignmentPill, favoriteVehicles]);
-  
   const mainTableData = useMemo(() => {
     if (!fleetData) return [];
-
-    const assignmentId = activeAssignmentPill || (selectedAssignment !== ANY_VALUE ? selectedAssignment : null);
     
+    const assignmentId = activeAssignmentPill || (selectedAssignment !== ANY_VALUE ? selectedAssignment : null);
+
     if (assignmentId) {
         const prefix = assignmentId;
         let data = fleetData.vehicles.filter(v => {
-            const platePrefix = v.plate.substring(0, 3);
-            const olMatch = !v.ol || v.ol === prefix;
-            return platePrefix === prefix && olMatch;
+             const olMatch = v.ol === prefix;
+             const platePrefixMatch = v.plate.substring(0, 3) === prefix;
+             return olMatch || platePrefixMatch;
         });
 
         if (selectedVehicle && selectedVehicle !== ANY_VALUE && !activeAssignmentPill) {
             data = data.filter(v => v.makeModel === selectedVehicle);
         }
-
         return data;
+
+    } else if (favoriteVehicles.length > 0 && selectedAssignment === ANY_VALUE && !activeAssignmentPill) {
+        return favoriteVehicles;
     }
     
-    // If no filters are active, return empty to not show the full list
     return [];
-
-  }, [fleetData, selectedAssignment, selectedVehicle, activeAssignmentPill]);
-
+  }, [fleetData, selectedAssignment, selectedVehicle, activeAssignmentPill, favoriteVehicles]);
+  
   const columns = useMemo(
     () => getColumns(favoriteVehicleIds, toggleFavoriteVehicle),
     [favoriteVehicleIds]
@@ -424,3 +397,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
