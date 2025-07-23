@@ -365,17 +365,20 @@ export default function Home() {
                    {prefixToCopy && (
                       <div className="flex items-center justify-center gap-4 rounded-lg border bg-muted/50 p-6 text-center">
                           <span className="text-lg text-muted-foreground">Use the vehicle plate prefix:</span>
-                          <span className="text-2xl font-bold font-mono bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text">
-                            {prefixToCopy}
-                          </span>
+                          <span 
+                              className="text-4xl font-bold font-mono bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text"
+                              style={{ textShadow: '0 0 1px hsl(var(--foreground) / 0.2)' }}
+                            >
+                              {prefixToCopy}
+                            </span>
                           <Button 
                             variant="ghost" 
                             size="icon" 
                             className="group relative h-10 w-10" 
                             onClick={copyToClipboard}
                           >
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
-                            <div className="relative z-10 bg-background rounded-full p-2">
+                            <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-sm" />
+                            <div className="relative z-10">
                               <Copy className="h-5 w-5" />
                             </div>
                           </Button>
