@@ -363,13 +363,24 @@ export default function Home() {
                     </div>
                   </div>
                    {prefixToCopy && (
-                        <div className="flex items-center justify-center gap-2 rounded-md border bg-muted p-4 text-center">
-                           <span className="text-lg font-mono text-muted-foreground">Use the vehicle plate prefix: {prefixToCopy}</span>
-                           <Button variant="ghost" size="icon" className="h-8 w-8" onClick={copyToClipboard}>
-                             <Copy className="h-5 w-5" />
-                           </Button>
-                        </div>
-                      )}
+                      <div className="flex items-center justify-center gap-4 rounded-lg border bg-muted/50 p-6 text-center">
+                          <span className="text-lg text-muted-foreground">Use the vehicle plate prefix:</span>
+                          <span className="text-2xl font-bold font-mono bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text">
+                            {prefixToCopy}
+                          </span>
+                          <Button 
+                            variant="ghost" 
+                            size="icon" 
+                            className="group relative h-10 w-10" 
+                            onClick={copyToClipboard}
+                          >
+                            <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
+                            <div className="relative z-10 bg-background rounded-full p-2">
+                              <Copy className="h-5 w-5" />
+                            </div>
+                          </Button>
+                      </div>
+                    )}
                 </div>
 
                 <AnimatePresence>
@@ -397,5 +408,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
