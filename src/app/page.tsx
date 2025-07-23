@@ -21,13 +21,7 @@ import { syncFleetData } from "@/app/actions";
 import type { Vehicle, Assignment, FleetData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { SearchableSelect } from "@/components/ui/searchable-select";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
@@ -51,7 +45,7 @@ export default function Home() {
     new Set()
   );
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [isSyncing, setIsSyncing] = useState(false);
   const [selectedAssignment, setSelectedAssignment] = useState<string>(ANY_VALUE);
   const [selectedVehicle, setSelectedVehicle] = useState<string>(ANY_VALUE);
@@ -101,11 +95,20 @@ export default function Home() {
   };
 
   const handleSync = async () => {
+    if (!canSync) {
+        toast({
+            variant: "destructive",
+            title: "Sync Limit",
+            description: "You can only sync once every 24 hours.",
+        });
+        return;
+    }
     setIsSyncing(true);
     try {
       const data = await syncFleetData();
       setFleetData(data); // update state with newly synced data
       setLastSync(new Date().toISOString());
+      setCanSync(false);
       toast({
         title: "Success",
         description: "Fleet data synced successfully.",
@@ -161,12 +164,13 @@ export default function Home() {
     [fleetData?.vehicles, favoriteVehicleIds]
   );
   
-  const handleAssignmentChange = (value: string) => {
-    setSelectedAssignment(value);
+  const handleAssignmentChange = (value?: string) => {
+    const newValue = value || ANY_VALUE;
+    setSelectedAssignment(newValue);
     setSelectedVehicle(ANY_VALUE);
     setActiveAssignmentPill("");
-    if (value && value !== ANY_VALUE) {
-      const prefix = `${value}00`;
+    if (newValue && newValue !== ANY_VALUE) {
+      const prefix = `${newValue}00`;
       setPrefixToCopy(prefix);
     } else {
       setPrefixToCopy("");
@@ -229,7 +233,7 @@ export default function Home() {
         return favoriteVehicles;
     }
     
-    return [];
+    return fleetData.vehicles;
   }, [fleetData, selectedAssignment, selectedVehicle, activeAssignmentPill, favoriteVehicles]);
   
   const columns = useMemo(
@@ -240,6 +244,17 @@ export default function Home() {
     () => getColumns(favoriteVehicleIds, toggleFavoriteVehicle, true, favoriteAssignmentIds, toggleFavoriteAssignment),
     [favoriteVehicleIds, favoriteAssignmentIds]
   );
+  
+  const assignmentOptions = useMemo(() => [
+      { value: ANY_VALUE, label: "Any" },
+      ...(fleetData?.assignments.map(a => ({ value: a.id, label: a.name })) || [])
+  ], [fleetData?.assignments]);
+
+  const vehicleOptions = useMemo(() => [
+        { value: ANY_VALUE, label: "Any" },
+        ...availableVehicles.map(v => ({ value: v, label: v }))
+  ], [availableVehicles]);
+
 
   if (isLoading && !fleetData) {
     return (
@@ -329,44 +344,32 @@ export default function Home() {
                   <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                     <div className="flex flex-col gap-2">
                       <label className="text-sm font-medium">Assignment</label>
-                      <Select
-                        onValueChange={handleAssignmentChange}
-                        value={selectedAssignment}
-                        disabled={!!activeAssignmentPill}
-                      >
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select an assignment" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value={ANY_VALUE}>Any</SelectItem>
-                          {fleetData?.assignments.map((a) => (
-                            <SelectItem key={a.id} value={a.id}>
-                              {a.name}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
+                       <SearchableSelect
+                            options={assignmentOptions}
+                            value={selectedAssignment}
+                            onChange={handleAssignmentChange}
+                            placeholder="Select an assignment"
+                            searchPlaceholder="Search assignments..."
+                            disabled={!!activeAssignmentPill}
+                        />
                     </div>
                     <div className="flex flex-col gap-2">
                        <label className="text-sm font-medium">Vehicle</label>
-                       <Select onValueChange={setSelectedVehicle} value={selectedVehicle} disabled={!selectedAssignment || selectedAssignment === ANY_VALUE || !!activeAssignmentPill}>
-                         <SelectTrigger>
-                           <SelectValue placeholder="Select a vehicle" />
-                         </SelectTrigger>
-                         <SelectContent>
-                           <SelectItem value={ANY_VALUE}>Any</SelectItem>
-                           {availableVehicles.map(v => (
-                             <SelectItem key={v} value={v}>{v}</SelectItem>
-                           ))}
-                         </SelectContent>
-                       </Select>
+                        <SearchableSelect
+                            options={vehicleOptions}
+                            value={selectedVehicle}
+                            onChange={(value) => setSelectedVehicle(value || ANY_VALUE)}
+                            placeholder="Select a vehicle"
+                            searchPlaceholder="Search vehicles..."
+                            disabled={!selectedAssignment || selectedAssignment === ANY_VALUE || !!activeAssignmentPill}
+                        />
                     </div>
                   </div>
                    {prefixToCopy && (
                       <div className="flex items-center justify-center gap-4 rounded-lg border bg-muted/50 p-6 text-center">
                           <span className="text-lg text-muted-foreground">Use the vehicle plate prefix:</span>
                           <span 
-                              className="text-4xl font-bold font-mono bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text"
+                              className="text-5xl font-bold font-mono bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text"
                               style={{ textShadow: '0 0 1px hsl(var(--foreground) / 0.2)' }}
                             >
                               {prefixToCopy}
@@ -377,10 +380,7 @@ export default function Home() {
                             className="group relative h-10 w-10" 
                             onClick={copyToClipboard}
                           >
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-sm" />
-                            <div className="relative z-10">
-                              <Copy className="h-5 w-5" />
-                            </div>
+                            <Copy className="h-5 w-5" />
                           </Button>
                       </div>
                     )}
