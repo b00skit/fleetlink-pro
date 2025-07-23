@@ -3,6 +3,8 @@
 import { google } from "googleapis";
 import { recommendVehiclesAssignments, type RecommendVehiclesAssignmentsInput } from "@/ai/flows/recommend-vehicles-assignments";
 import type { FleetData, Assignment, Vehicle } from "@/lib/types";
+import { promises as fs } from 'fs';
+import path from 'path';
 
 export async function syncFleetData(): Promise<FleetData> {
   const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
@@ -62,8 +64,15 @@ export async function syncFleetData(): Promise<FleetData> {
   });
   
   assignments.sort((a, b) => a.name.localeCompare(b.name));
+  
+  const fleetData: FleetData = { assignments, vehicles };
+  
+  // Store the data in a JSON file
+  const dataDirPath = path.join(process.cwd(), 'public', 'data');
+  await fs.mkdir(dataDirPath, { recursive: true });
+  await fs.writeFile(path.join(dataDirPath, 'fleetData.json'), JSON.stringify(fleetData, null, 2));
 
-  return { assignments, vehicles };
+  return fleetData;
 }
 
 export async function getRecommendations(input: RecommendVehiclesAssignmentsInput) {

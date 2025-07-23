@@ -36,10 +36,7 @@ const ANY_VALUE = "any-value-placeholder";
 
 export default function Home() {
   const { toast } = useToast();
-  const [fleetData, setFleetData] = useLocalStorage<FleetData | null>(
-    "fleetData",
-    null
-  );
+  const [fleetData, setFleetData] = useState<FleetData | null>(null);
   const [lastSync, setLastSync] = useLocalStorage<string | null>(
     "lastSync",
     null
@@ -54,6 +51,7 @@ export default function Home() {
   );
 
   const [isLoading, setIsLoading] = useState(false);
+  const [isSyncing, setIsSyncing] = useState(false);
   const [selectedAssignment, setSelectedAssignment] = useState<string>(ANY_VALUE);
   const [selectedVehicle, setSelectedVehicle] = useState<string>(ANY_VALUE);
   const [prefixToCopy, setPrefixToCopy] = useState<string>("");
@@ -64,11 +62,36 @@ export default function Home() {
     return new Date().getTime() - new Date(lastSync).getTime() > ONE_DAY_IN_MS;
   }, [lastSync]);
 
-  const handleSync = async () => {
+  const loadData = async () => {
     setIsLoading(true);
     try {
+        const response = await fetch('/data/fleetData.json?v=' + new Date().getTime());
+        if (!response.ok) {
+            // If the file doesn't exist, sync it
+            if (response.status === 404) {
+                await handleSync();
+            } else {
+                 throw new Error(`Failed to load data: ${response.statusText}`);
+            }
+        } else {
+            const data = await response.json();
+            setFleetData(data);
+        }
+
+    } catch (error) {
+        console.error("Failed to load fleet data from JSON, attempting sync.", error);
+        // If there's an error loading (e.g., file not found), trigger a sync.
+        await handleSync();
+    } finally {
+        setIsLoading(false);
+    }
+  };
+
+  const handleSync = async () => {
+    setIsSyncing(true);
+    try {
       const data = await syncFleetData();
-      setFleetData(data);
+      setFleetData(data); // update state with newly synced data
       setLastSync(new Date().toISOString());
       toast({
         title: "Success",
@@ -81,15 +104,13 @@ export default function Home() {
         description: "Failed to sync fleet data.",
       });
     } finally {
-      setIsLoading(false);
+      setIsSyncing(false);
     }
   };
 
   useEffect(() => {
-    if (!fleetData) {
-      handleSync();
-    }
-  }, [fleetData]);
+    loadData();
+  }, []);
 
   const toggleFavoriteVehicle = (vehicleId: string) => {
     const newFavorites = new Set(favoriteVehicleIds);
@@ -181,11 +202,40 @@ export default function Home() {
         if (selectedVehicle && selectedVehicle !== ANY_VALUE) {
             data = data.filter(v => v.makeModel === selectedVehicle);
         }
-    } else {
+    } else if (favoriteVehicles.length > 0 && !activeAssignmentPill) {
+        // Default to showing favorite vehicles if no assignment is selected
+        return [];
+    }
+     else {
         return [];
     }
 
     return data;
+  }, [fleetData, selectedAssignment, selectedVehicle, activeAssignmentPill, favoriteVehicles]);
+  
+  const mainTableData = useMemo(() => {
+    if (!fleetData) return [];
+
+    // If a pill is active, filter by assignment
+    if(activeAssignmentPill) {
+      const assignmentCode = activeAssignmentPill.substring(1);
+      return fleetData.vehicles.filter(v => (v.ol).startsWith(`1${assignmentCode}`));
+    }
+
+    // If an assignment is selected from dropdown, filter by it
+    if(selectedAssignment && selectedAssignment !== ANY_VALUE) {
+        let data = fleetData.vehicles;
+        const assignmentCode = selectedAssignment.substring(1);
+        data = data.filter(v => (v.ol).startsWith(`1${assignmentCode}`));
+        if (selectedVehicle && selectedVehicle !== ANY_VALUE) {
+            data = data.filter(v => v.makeModel === selectedVehicle);
+        }
+        return data;
+    }
+    
+    // If no filters are active, return empty to not show the full list
+    return [];
+
   }, [fleetData, selectedAssignment, selectedVehicle, activeAssignmentPill]);
 
   const columns = useMemo(
@@ -197,11 +247,11 @@ export default function Home() {
     [favoriteVehicleIds, favoriteAssignmentIds]
   );
 
-  if (!fleetData && isLoading) {
+  if (isLoading && !fleetData) {
     return (
       <div className="flex h-screen w-full items-center justify-center">
         <Loader2 className="h-12 w-12 animate-spin text-primary" />
-        <p className="ml-4 text-lg">Syncing fleet data...</p>
+        <p className="ml-4 text-lg">Loading fleet data...</p>
       </div>
     );
   }
@@ -225,8 +275,8 @@ export default function Home() {
               onFavoriteVehicleToggle={toggleFavoriteVehicle}
               onFavoriteAssignmentToggle={toggleFavoriteAssignment}
             />
-            <Button onClick={handleSync} disabled={!canSync || isLoading} size="sm">
-              {isLoading ? (
+            <Button onClick={handleSync} disabled={!canSync || isSyncing} size="sm">
+              {isSyncing ? (
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
               ) : (
                 <RefreshCw className="mr-2 h-4 w-4" />
@@ -288,6 +338,7 @@ export default function Home() {
                       <Select
                         onValueChange={handleAssignmentChange}
                         value={selectedAssignment}
+                        disabled={!!activeAssignmentPill}
                       >
                         <SelectTrigger>
                           <SelectValue placeholder="Select an assignment" />
@@ -312,7 +363,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col gap-2">
                        <label className="text-sm font-medium">Vehicle</label>
-                       <Select onValueChange={setSelectedVehicle} value={selectedVehicle} disabled={!selectedAssignment || selectedAssignment === ANY_VALUE}>
+                       <Select onValueChange={setSelectedVehicle} value={selectedVehicle} disabled={!selectedAssignment || selectedAssignment === ANY_VALUE || !!activeAssignmentPill}>
                          <SelectTrigger>
                            <SelectValue placeholder="Select a vehicle" />
                          </SelectTrigger>
@@ -328,19 +379,19 @@ export default function Home() {
                 </div>
 
                 <AnimatePresence>
-                  {(filteredMainData.length > 0) ? (
+                  {(mainTableData.length > 0) ? (
                     <motion.div
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <DataTable columns={columns} data={filteredMainData} />
+                      <DataTable columns={columns} data={mainTableData} />
                     </motion.div>
                   ) : (
                     <div className="text-center text-muted-foreground py-8">
-                      <p>No vehicles match the current filter.</p>
-                      <p className="text-sm">Select an assignment to view vehicles.</p>
+                      <p>No vehicles to display.</p>
+                      <p className="text-sm">Select an assignment or click a favorite assignment pill to view vehicles.</p>
                     </div>
                   )}
                 </AnimatePresence>
