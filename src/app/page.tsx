@@ -31,6 +31,8 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 const ONE_DAY_IN_MS = 24 * 60 * 60 * 1000;
+const ANY_VALUE = "any-value-placeholder";
+
 
 export default function Home() {
   const { toast } = useToast();
@@ -52,8 +54,8 @@ export default function Home() {
   );
 
   const [isLoading, setIsLoading] = useState(false);
-  const [selectedAssignment, setSelectedAssignment] = useState<string>("");
-  const [selectedVehicle, setSelectedVehicle] = useState<string>("");
+  const [selectedAssignment, setSelectedAssignment] = useState<string>(ANY_VALUE);
+  const [selectedVehicle, setSelectedVehicle] = useState<string>(ANY_VALUE);
   const [prefixToCopy, setPrefixToCopy] = useState<string>("");
   const [activeAssignmentPill, setActiveAssignmentPill] = useState<string>("");
 
@@ -127,9 +129,9 @@ export default function Home() {
   
   const handleAssignmentChange = (value: string) => {
     setSelectedAssignment(value);
-    setSelectedVehicle("");
+    setSelectedVehicle(ANY_VALUE);
     setActiveAssignmentPill("");
-    if (value) {
+    if (value && value !== ANY_VALUE) {
       const prefix = `1${value.substring(1, 4)}00`;
       setPrefixToCopy(prefix);
     } else {
@@ -140,7 +142,7 @@ export default function Home() {
   const handlePillClick = (assignmentId: string) => {
      if (activeAssignmentPill === assignmentId) {
        setActiveAssignmentPill("");
-       setSelectedAssignment("");
+       setSelectedAssignment(ANY_VALUE);
        setPrefixToCopy("");
      } else {
        setActiveAssignmentPill(assignmentId);
@@ -159,7 +161,7 @@ export default function Home() {
   };
 
   const availableVehicles = useMemo(() => {
-    if (!selectedAssignment || !fleetData) return [];
+    if (!selectedAssignment || selectedAssignment === ANY_VALUE || !fleetData) return [];
     const assignmentCode = selectedAssignment.substring(1);
     const vehiclesInAssignment = fleetData.vehicles.filter(v => (v.ol || v.plate).startsWith(`1${assignmentCode}`));
     return [...new Set(vehiclesInAssignment.map(v => v.makeModel))].sort();
@@ -173,10 +175,10 @@ export default function Home() {
     if (activeAssignmentPill) {
         const assignmentCode = activeAssignmentPill.substring(1);
         data = data.filter(v => (v.ol).startsWith(`1${assignmentCode}`));
-    } else if (selectedAssignment) {
+    } else if (selectedAssignment && selectedAssignment !== ANY_VALUE) {
         const assignmentCode = selectedAssignment.substring(1);
         data = data.filter(v => (v.ol).startsWith(`1${assignmentCode}`));
-        if (selectedVehicle) {
+        if (selectedVehicle && selectedVehicle !== ANY_VALUE) {
             data = data.filter(v => v.makeModel === selectedVehicle);
         }
     } else {
@@ -291,7 +293,7 @@ export default function Home() {
                           <SelectValue placeholder="Select an assignment" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="">Any</SelectItem>
+                          <SelectItem value={ANY_VALUE}>Any</SelectItem>
                           {fleetData?.assignments.map((a) => (
                             <SelectItem key={a.id} value={a.id}>
                               {a.name}
@@ -310,12 +312,12 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col gap-2">
                        <label className="text-sm font-medium">Vehicle</label>
-                       <Select onValueChange={setSelectedVehicle} value={selectedVehicle} disabled={!selectedAssignment}>
+                       <Select onValueChange={setSelectedVehicle} value={selectedVehicle} disabled={!selectedAssignment || selectedAssignment === ANY_VALUE}>
                          <SelectTrigger>
                            <SelectValue placeholder="Select a vehicle" />
                          </SelectTrigger>
                          <SelectContent>
-                           <SelectItem value="">Any</SelectItem>
+                           <SelectItem value={ANY_VALUE}>Any</SelectItem>
                            {availableVehicles.map(v => (
                              <SelectItem key={v} value={v}>{v}</SelectItem>
                            ))}
