@@ -1,0 +1,5146 @@
+{
+  "assignments": [
+    {
+      "id": "151",
+      "name": "ADMINISTRATIVE SERVICES DIVISION (51)"
+    },
+    {
+      "id": "128",
+      "name": "AERO BUREAU (28)"
+    },
+    {
+      "id": "122",
+      "name": "CANINE SERVICES DETAIL (22)"
+    },
+    {
+      "id": "121",
+      "name": "CANINE VETERINARY TEAM (21)"
+    },
+    {
+      "id": "152",
+      "name": "COMMUNICATION & FLEET MANAGEMENT BUREAU (52)"
+    },
+    {
+      "id": "153",
+      "name": "COURT SERVICES BUREAU (53)"
+    },
+    {
+      "id": "170",
+      "name": "COVERT VEHICLES (70)"
+    },
+    {
+      "id": "129B",
+      "name": "CSD TAKEHOME VEHICLES (29B)"
+    },
+    {
+      "id": "144",
+      "name": "DAVIS SPECIAL ASSIGNMENT TEAM (44)"
+    },
+    {
+      "id": "142",
+      "name": "DAVIS STATION CANINE (42)"
+    },
+    {
+      "id": "140",
+      "name": "DAVIS STATION PATROL (40)"
+    },
+    {
+      "id": "149",
+      "name": "DAVIS STATION SPECIAL PURPOSE (49)"
+    },
+    {
+      "id": "141",
+      "name": "DAVIS STATION SUPERVISOR (41)"
+    },
+    {
+      "id": "145",
+      "name": "DAVIS STATION TRAFFIC (45)"
+    },
+    {
+      "id": "101",
+      "name": "DEPARTMENT SHAREABLE FLEET (01)"
+    },
+    {
+      "id": "130",
+      "name": "DETECTIVE DIVISION HEADQUARTERS (30)"
+    },
+    {
+      "id": "110",
+      "name": "DIVISION HEADQUARTERS (10)"
+    },
+    {
+      "id": "123",
+      "name": "EMERGENCY SERVICES DETAIL (23)"
+    },
+    {
+      "id": "129C",
+      "name": "ESD TAKEHOME VEHICLES (29C)"
+    },
+    {
+      "id": "111",
+      "name": "GLSA GUN CRIMES TASK FORCE (11)"
+    },
+    {
+      "id": "136",
+      "name": "HOMICIDE BUREAU (36)"
+    },
+    {
+      "id": "134",
+      "name": "INTERNAL AFFAIRS BUREAU (34)"
+    },
+    {
+      "id": "131",
+      "name": "MAJOR CRIMES BUREAU (31)"
+    },
+    {
+      "id": "132",
+      "name": "NARCOTICS BUREAU (32)"
+    },
+    {
+      "id": "150",
+      "name": "OFFICE OF THE SHERIFF (50)"
+    },
+    {
+      "id": "138",
+      "name": "OPERATION SAFE STREETS BUREAU (38)"
+    },
+    {
+      "id": "135",
+      "name": "SCIENTIFIC SERVICES BUREAU (35)"
+    },
+    {
+      "id": "127",
+      "name": "SEB ARSON & EXPLOSIVES (27)"
+    },
+    {
+      "id": "125",
+      "name": "SEB CRIME SUPPRESSION VEHICLES (25)"
+    },
+    {
+      "id": "124",
+      "name": "SEB DEPLOYMENT VEHICLES (24)"
+    },
+    {
+      "id": "126",
+      "name": "SEB SPECIAL ENFORCEMENT DETAIL (26)"
+    },
+    {
+      "id": "129A",
+      "name": "SEB TAKEHOME VEHICLES (29A)"
+    },
+    {
+      "id": "168",
+      "name": "SENORA NORTH COUNTY CRIME IMPACT TEAM (68)"
+    },
+    {
+      "id": "167",
+      "name": "SENORA RESIDENT DEPUTY (67)"
+    },
+    {
+      "id": "169",
+      "name": "SENORA SEARCH AND RESCUE / MARINE OPERATIONS UNIT (69)"
+    },
+    {
+      "id": "162",
+      "name": "SENORA STATION CANINE (62)"
+    },
+    {
+      "id": "166",
+      "name": "SENORA STATION PATROL (66)"
+    },
+    {
+      "id": "163",
+      "name": "SENORA STATION SPECIAL PURPOSE (63)"
+    },
+    {
+      "id": "160",
+      "name": "SENORA STATION SUPERVISOR (60)"
+    },
+    {
+      "id": "165",
+      "name": "SENORA STATION TRAFFIC (65)"
+    },
+    {
+      "id": "120",
+      "name": "SPECIAL OPERATIONS SUPERVISOR (20)"
+    },
+    {
+      "id": "102",
+      "name": "SPECIAL SHAREABLE FLEET (02)"
+    },
+    {
+      "id": "115",
+      "name": "TRAFFIC SERVICES DETAIL (15)"
+    },
+    {
+      "id": "100",
+      "name": "UNASSIGNED / SURPLUS FLEET (00)"
+    },
+    {
+      "id": "103",
+      "name": "UTILITY SHAREABLE FLEET (03)"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "1     —     CENTRAL PATROL DIVISION",
+      "plate": "",
+      "makeModel": "",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "33740",
+      "plate": "11000740",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Commander Kennedy Laine",
+      "purpose": "Commander - CPD",
+      "notes": ""
+    },
+    {
+      "id": "38802",
+      "plate": "11100802",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "GLSAGCTF",
+      "notes": ""
+    },
+    {
+      "id": "576062",
+      "plate": "11100062",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "GLSAGCTF",
+      "notes": ""
+    },
+    {
+      "id": "113323",
+      "plate": "11100323",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "GLSAGCTF",
+      "notes": ""
+    },
+    {
+      "id": "85952",
+      "plate": "11100952",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "GLSAGCTF",
+      "notes": ""
+    },
+    {
+      "id": "85953",
+      "plate": "11100953",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "GLSAGCTF",
+      "notes": ""
+    },
+    {
+      "id": "113325",
+      "plate": "11100325",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "GLSAGCTF",
+      "notes": ""
+    },
+    {
+      "id": "127970",
+      "plate": "11500970",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Traffic Investigator",
+      "notes": "SLICKTOP"
+    },
+    {
+      "id": "80143",
+      "plate": "11500143",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Traffic Investigator",
+      "notes": "SLICKTOP"
+    },
+    {
+      "id": "506205",
+      "plate": "11500205",
+      "makeModel": "Dinka Thrust Police Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Motors Deputy",
+      "notes": "Senora Station"
+    },
+    {
+      "id": "506206",
+      "plate": "11500206",
+      "makeModel": "Dinka Thrust Police Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Motors Deputy",
+      "notes": "Davis Station"
+    },
+    {
+      "id": "506207",
+      "plate": "11500207",
+      "makeModel": "Shitzu Hakuchou Police Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Motors Deputy",
+      "notes": "Senora Station"
+    },
+    {
+      "id": "506208",
+      "plate": "11500208",
+      "makeModel": "Shitzu Hakuchou Police Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Motors Deputy",
+      "notes": "Senora Station"
+    },
+    {
+      "id": "600728",
+      "plate": "11500728",
+      "makeModel": "Shitzu Hakuchou Police Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Motors Deputy",
+      "notes": "Davis Station"
+    },
+    {
+      "id": "600729",
+      "plate": "11500729",
+      "makeModel": "Shitzu Hakuchou Police Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Motors Deputy",
+      "notes": "Davis Station"
+    },
+    {
+      "id": "616014",
+      "plate": "11500014",
+      "makeModel": "Western Motorcycle Company Wintergreen Police Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Motors Deputy",
+      "notes": "Senora Station"
+    },
+    {
+      "id": "616015",
+      "plate": "11500015",
+      "makeModel": "Western Motorcycle Company Wintergreen Police Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Motors Deputy",
+      "notes": "Senora Station"
+    },
+    {
+      "id": "65817",
+      "plate": "11500817",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "UNMARKED BLUE"
+    },
+    {
+      "id": "568265",
+      "plate": "11500265",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "UNMARKED BLUE"
+    },
+    {
+      "id": "506200",
+      "plate": "11500200",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "UNMARKED BLUE"
+    },
+    {
+      "id": "127975",
+      "plate": "11500975",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "UNMARKED WHITE"
+    },
+    {
+      "id": "51359",
+      "plate": "11500359",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "UNMARKED GREEN"
+    },
+    {
+      "id": "587350",
+      "plate": "11500350",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "UNMARKED BLUE"
+    },
+    {
+      "id": "89206",
+      "plate": "16000206",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "115",
+      "authorized": "Lieutenant Mark Schreiber",
+      "purpose": "Detail Commander - Traffic Services",
+      "notes": ""
+    },
+    {
+      "id": "4     —     DAVIS STATION",
+      "plate": "",
+      "makeModel": "",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "33552",
+      "plate": "14000355",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": "ALPR"
+    },
+    {
+      "id": "33732",
+      "plate": "14000732",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "113320",
+      "plate": "14000320",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "557311",
+      "plate": "14000311",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "557312",
+      "plate": "14000312",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "40304",
+      "plate": "14000304",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "40307",
+      "plate": "14000307",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "108325",
+      "plate": "14000325",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "108326",
+      "plate": "14000326",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "108327",
+      "plate": "14000327",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "48757",
+      "plate": "14000757",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": "ALPR"
+    },
+    {
+      "id": "85954",
+      "plate": "14000954",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "85956",
+      "plate": "14000956",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "113314",
+      "plate": "14000314",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "37413",
+      "plate": "14000413",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Davis Patrol Pool",
+      "notes": "MX7000 LIGHTBAR"
+    },
+    {
+      "id": "600711",
+      "plate": "14100711",
+      "makeModel": "Vapid Sandstorm Police Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Captain Laura Meredith",
+      "purpose": "Unit Commander",
+      "notes": ""
+    },
+    {
+      "id": "557309",
+      "plate": "14100309",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "113327",
+      "plate": "14100327",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Lieutenant Karen Miller",
+      "purpose": "Operations Lieutenant",
+      "notes": ""
+    },
+    {
+      "id": "554428",
+      "plate": "14100428",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "A/Sergeant Lucia Sanchez",
+      "purpose": "SAT Team Leader",
+      "notes": ""
+    },
+    {
+      "id": "108332",
+      "plate": "14100332",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Lieutenant Lauren Turner",
+      "purpose": "Service Area Lieutenant",
+      "notes": "ALPR"
+    },
+    {
+      "id": "104693",
+      "plate": "14100693",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Sergeant William Graves",
+      "purpose": "Operations Sergeant",
+      "notes": ""
+    },
+    {
+      "id": "519245",
+      "plate": "14100245",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Lieutenant+",
+      "purpose": "Lieutenant Car",
+      "notes": ""
+    },
+    {
+      "id": "130417",
+      "plate": "14100417",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Lieutenant+",
+      "purpose": "Lieutenant Car",
+      "notes": ""
+    },
+    {
+      "id": "65808",
+      "plate": "14100808",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Lieutenant+",
+      "purpose": "Lieutenant Car",
+      "notes": ""
+    },
+    {
+      "id": "108324",
+      "plate": "14100324",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Sergeant+",
+      "purpose": "Sergeant Car",
+      "notes": ""
+    },
+    {
+      "id": "108323",
+      "plate": "14100323",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Sergeant+",
+      "purpose": "Sergeant Car",
+      "notes": ""
+    },
+    {
+      "id": "124562",
+      "plate": "14100562",
+      "makeModel": "Declasse Alamo Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Sergeant+",
+      "purpose": "Sergeant Car",
+      "notes": ""
+    },
+    {
+      "id": "124563",
+      "plate": "14100563",
+      "makeModel": "Declasse Alamo Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Sergeant+",
+      "purpose": "Sergeant Car",
+      "notes": ""
+    },
+    {
+      "id": "557957",
+      "plate": "14100957",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Sergeant+",
+      "purpose": "Sergeant Car",
+      "notes": ""
+    },
+    {
+      "id": "570159",
+      "plate": "14200159",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Sergeant Riley Collins",
+      "purpose": "280K9S",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "538513",
+      "plate": "14200513",
+      "makeModel": "Bravado Buffalo S Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Erin Baker",
+      "purpose": "280K91",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "593223",
+      "plate": "14200223",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "280K92",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "570157",
+      "plate": "14200157",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "280K93",
+      "notes": "70% kennel, 30% cage"
+    },
+    {
+      "id": "570155",
+      "plate": "14200155",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Cleo Rossi",
+      "purpose": "280K94",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "570160",
+      "plate": "14200160",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Nicholas Hernandez",
+      "purpose": "280K95",
+      "notes": "70% kennel, 30% cage"
+    },
+    {
+      "id": "570156",
+      "plate": "14200156",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Hector Fuentes",
+      "purpose": "280K96",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "570158",
+      "plate": "14200158",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Ellie Rivera",
+      "purpose": "280K97",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "570161",
+      "plate": "14200161",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "SHARED",
+      "purpose": "Pool Car",
+      "notes": "70% kennel, no cage"
+    },
+    {
+      "id": "593225",
+      "plate": "14200225",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "ON-CALL HANDLERS",
+      "purpose": "On-Call Handlers",
+      "notes": "100% kennel (split for 2 dogs)"
+    },
+    {
+      "id": "600718",
+      "plate": "14200115",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "SHARED",
+      "purpose": "DAVIS CANINE",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "600721",
+      "plate": "14200116",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "SHARED",
+      "purpose": "DAVIS CANINE",
+      "notes": "MX7000 LIGHTBAR - 100% kennel, no cage"
+    },
+    {
+      "id": "585231",
+      "plate": "14400231",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Suppression Operations",
+      "notes": "UNMARKED"
+    },
+    {
+      "id": "585230",
+      "plate": "14400230",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SAT Deputies",
+      "notes": "SLICKTOP"
+    },
+    {
+      "id": "585232",
+      "plate": "14400232",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Suppression Operations",
+      "notes": "SLICKTOP"
+    },
+    {
+      "id": "585233",
+      "plate": "14400233",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SAT Deputies",
+      "notes": "SLICKTOP"
+    },
+    {
+      "id": "537477",
+      "plate": "14400477",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SAT Deputies",
+      "notes": "SLICKTOP"
+    },
+    {
+      "id": "587779",
+      "plate": "14400779",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Suppression Operations",
+      "notes": "UNMARKED"
+    },
+    {
+      "id": "587780",
+      "plate": "14400780",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Suppression Operations",
+      "notes": "UNMARKED"
+    },
+    {
+      "id": "587781",
+      "plate": "14400781",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SAT Deputies",
+      "notes": "SLICKTOP"
+    },
+    {
+      "id": "593221",
+      "plate": "14500221",
+      "makeModel": "Vapid Torrence Police Interceptor",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "Davis Traffic Team"
+    },
+    {
+      "id": "593222",
+      "plate": "14500222",
+      "makeModel": "Vapid Torrence Police Interceptor",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "Davis Traffic Team"
+    },
+    {
+      "id": "585235",
+      "plate": "14500235",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "DVS Livery"
+    },
+    {
+      "id": "587348",
+      "plate": "14500348",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "DVS Livery"
+    },
+    {
+      "id": "506204",
+      "plate": "14500204",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "DVS Livery"
+    },
+    {
+      "id": "587349",
+      "plate": "14500349",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Probationary TED+",
+      "notes": "DVS Livery"
+    },
+    {
+      "id": "587351",
+      "plate": "14500351",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Probationary TED+",
+      "notes": "DVS Livery"
+    },
+    {
+      "id": "33738",
+      "plate": "14900738",
+      "makeModel": "Vapid Sandstorm Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Utility Truck",
+      "notes": "FOR EQUIPMENT TRANSPORTATION USE"
+    },
+    {
+      "id": "124552",
+      "plate": "14900552",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SNOW CONDITIONS",
+      "notes": "FOR USE DURING WINTER / SNOW CONDITIONS"
+    },
+    {
+      "id": "57216",
+      "plate": "14900216",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SNOW CONDITIONS",
+      "notes": "FOR USE DURING WINTER / SNOW CONDITIONS"
+    },
+    {
+      "id": "130409",
+      "plate": "14900409",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Special Activities Car",
+      "notes": "MAY BE DEPLOYED UNDER WATCH DEPUTY+ APPROVAL"
+    },
+    {
+      "id": "41002",
+      "plate": "14900002",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Special Activities Car",
+      "notes": "MAY BE DEPLOYED UNDER WATCH DEPUTY+ APPROVAL"
+    },
+    {
+      "id": "557310",
+      "plate": "14900310",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Special Activities Car",
+      "notes": "MAY BE DEPLOYED UNDER WATCH DEPUTY+ APPROVAL"
+    },
+    {
+      "id": "6     —     SENORA STATION",
+      "plate": "",
+      "makeModel": "",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "33727",
+      "plate": "16600727",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": "ALPR"
+    },
+    {
+      "id": "33730",
+      "plate": "16600730",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "33733",
+      "plate": "16600733",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "40305",
+      "plate": "16600305",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "557306",
+      "plate": "16600306",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "33734",
+      "plate": "16600734",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "33804",
+      "plate": "16600804",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "108328",
+      "plate": "16600328",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "40306",
+      "plate": "16600030",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "108329",
+      "plate": "16600329",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "33729",
+      "plate": "16600729",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": "ALPR"
+    },
+    {
+      "id": "80174",
+      "plate": "16600174",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "85955",
+      "plate": "16600955",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "85957",
+      "plate": "16600957",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": ""
+    },
+    {
+      "id": "37412",
+      "plate": "16600412",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Senora Patrol Pool",
+      "notes": "MX7000 LIGHTBAR"
+    },
+    {
+      "id": "502354",
+      "plate": "16000354",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Captain Zachary Metzger",
+      "purpose": "Unit Commander",
+      "notes": ""
+    },
+    {
+      "id": "45848",
+      "plate": "16000848",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Lieutenant Christina Maynard",
+      "purpose": "Operations Lieutenant",
+      "notes": ""
+    },
+    {
+      "id": "561212",
+      "plate": "16000212",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "EM Shift Watch Commander",
+      "notes": ""
+    },
+    {
+      "id": "33805",
+      "plate": "16000805",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Lieutenant Brandon Markham",
+      "purpose": "Service Area Lieutenant",
+      "notes": ""
+    },
+    {
+      "id": "522566",
+      "plate": "16000566",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "PM Shift Watch Commander",
+      "notes": ""
+    },
+    {
+      "id": "36799",
+      "plate": "16000799",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Sergeant Car",
+      "notes": ""
+    },
+    {
+      "id": "104692",
+      "plate": "16000692",
+      "makeModel": "Declasse Alamo Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Sergeant Car",
+      "notes": ""
+    },
+    {
+      "id": "567330",
+      "plate": "16000330",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Senora Operations Permission Only",
+      "purpose": "Special Activities Car",
+      "notes": ""
+    },
+    {
+      "id": "66979",
+      "plate": "16000979",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Senora Operations Permission Only",
+      "purpose": "Special Activities Car",
+      "notes": ""
+    },
+    {
+      "id": "600722",
+      "plate": "16000722",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Senora Operations Permission Only",
+      "purpose": "Special Activities Car",
+      "notes": "ALPR"
+    },
+    {
+      "id": "637149",
+      "plate": "16000149",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Sergeant Car",
+      "notes": ""
+    },
+    {
+      "id": "637150",
+      "plate": "16000150",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Sergeant Car",
+      "notes": ""
+    },
+    {
+      "id": "593224",
+      "plate": "16200224",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Sergeant Brooke Vaughn",
+      "purpose": "110K9S",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "583571",
+      "plate": "16200571",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Chase Cooper",
+      "purpose": "110K91",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "502351",
+      "plate": "16200351",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Tony Ross",
+      "purpose": "110K92",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "557308",
+      "plate": "16200308",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Heather McCoy",
+      "purpose": "110K93",
+      "notes": "70% kennel, 30% cage"
+    },
+    {
+      "id": "124555",
+      "plate": "16200555",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff VACANT",
+      "purpose": "110K94",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "557307",
+      "plate": "16200307",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "110K95",
+      "notes": "70% kennel, 30% cage"
+    },
+    {
+      "id": "585239",
+      "plate": "16200239",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Elliot Winslow",
+      "purpose": "110K96",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "502352",
+      "plate": "16200352",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Marceline Noire",
+      "purpose": "110K97",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "538511",
+      "plate": "16200511",
+      "makeModel": "Bravado Buffalo S Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "SHARED",
+      "purpose": "Pool Car",
+      "notes": "70% kennel, 30% cage"
+    },
+    {
+      "id": "40308",
+      "plate": "16200730",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "ON-CALL HANDLERS",
+      "purpose": "On-Call Deputies",
+      "notes": "70% kennel, 30% cage"
+    },
+    {
+      "id": "608293",
+      "plate": "16200293",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "SHARED",
+      "purpose": "SENORA CANINE",
+      "notes": "100% kennel, no cage"
+    },
+    {
+      "id": "600710",
+      "plate": "16200114",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "SHARED",
+      "purpose": "SENORA CANINE",
+      "notes": "MX7000 LIGHTBAR - 100% kennel, no cage"
+    },
+    {
+      "id": "506202",
+      "plate": "16500202",
+      "makeModel": "Vapid Torrence Police Interceptor",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": ""
+    },
+    {
+      "id": "506203",
+      "plate": "16500203",
+      "makeModel": "Vapid Torrence Police Interceptor",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": ""
+    },
+    {
+      "id": "506209",
+      "plate": "16500209",
+      "makeModel": "Vapid Torrence Police Interceptor",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": ""
+    },
+    {
+      "id": "585234",
+      "plate": "16500234",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "SEN Livery"
+    },
+    {
+      "id": "506201",
+      "plate": "16500201",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "SEN Livery"
+    },
+    {
+      "id": "585236",
+      "plate": "16500236",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TED+",
+      "notes": "SEN Livery"
+    },
+    {
+      "id": "506198",
+      "plate": "16500198",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Probationary TED+",
+      "notes": "SEN Livery"
+    },
+    {
+      "id": "33736",
+      "plate": "16500736",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Probationary TED+",
+      "notes": "SEN Livery"
+    },
+    {
+      "id": "517264",
+      "plate": "16700264",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Mia Xirau",
+      "purpose": "Resident Deputy",
+      "notes": ""
+    },
+    {
+      "id": "517265",
+      "plate": "16700265",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Chuck Dixon",
+      "purpose": "Resident Deputy",
+      "notes": ""
+    },
+    {
+      "id": "554156",
+      "plate": "16700156",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Samuel Roberts",
+      "purpose": "Resident Deputy",
+      "notes": ""
+    },
+    {
+      "id": "33558",
+      "plate": "16800558",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Sergeant Noah Peralta",
+      "purpose": "NCCIT Team Leader",
+      "notes": "Unmarked."
+    },
+    {
+      "id": "600723",
+      "plate": "16800723",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Assistant Team Leader",
+      "notes": "Slicktop.  "
+    },
+    {
+      "id": "506210",
+      "plate": "16800210",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "NCCIT Deputies",
+      "notes": "Slicktop.  "
+    },
+    {
+      "id": "554370",
+      "plate": "16800370",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "NCCIT Deputies",
+      "notes": "Slicktop.  "
+    },
+    {
+      "id": "104686",
+      "plate": "16800686",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "NCCIT Deputies",
+      "notes": "Slicktop.  "
+    },
+    {
+      "id": "554372",
+      "plate": "16800372",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "NCCIT Deputies",
+      "notes": "Slicktop.  "
+    },
+    {
+      "id": "554369",
+      "plate": "16800369",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "NCCIT Deputies",
+      "notes": "Slicktop.  "
+    },
+    {
+      "id": "585237",
+      "plate": "16800237",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Suppression Operations Car",
+      "notes": "Slicktop. No cage."
+    },
+    {
+      "id": "563768",
+      "plate": "16800768",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Special Activities Car",
+      "notes": "Unmarked."
+    },
+    {
+      "id": "583572",
+      "plate": "16900572",
+      "makeModel": "Vapid Sandstorm Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Light Rescue Truck",
+      "notes": "SEN SAR"
+    },
+    {
+      "id": "585238",
+      "plate": "16900238",
+      "makeModel": "Vapid Sadler Police Utility",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Rescue Truck",
+      "notes": "SEN SAR"
+    },
+    {
+      "id": "593220",
+      "plate": "16900220",
+      "makeModel": "Nagasaki Outlaw Police Off-Road",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Utility Task Vehicle",
+      "notes": "SEN SAR"
+    },
+    {
+      "id": "157098",
+      "plate": "16900098",
+      "makeModel": "Vapid Sandstorm Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Utility Truck",
+      "notes": "Marine Operations"
+    },
+    {
+      "id": "512851",
+      "plate": "16900851",
+      "makeModel": "New Police Predator",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "High Speed Patrol Boat",
+      "notes": "Marine Operations"
+    },
+    {
+      "id": "521228",
+      "plate": "16900228",
+      "makeModel": "Nagasaki Dinghy (4-Seater)",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Rigid-Hulled Inflatable Boat",
+      "notes": "Marine Operations"
+    },
+    {
+      "id": "41264",
+      "plate": "16300264",
+      "makeModel": "Vapid Speedo Express Police Transporter",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "",
+      "purpose": "Transport / Utility Van",
+      "notes": ""
+    },
+    {
+      "id": "41265",
+      "plate": "16300265",
+      "makeModel": "Vapid Sandstorm Police",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "",
+      "purpose": "Utility Truck",
+      "notes": ""
+    },
+    {
+      "id": "85949",
+      "plate": "16300949",
+      "makeModel": "Dinka Verus ATV",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "",
+      "purpose": "All Terrain Vehicle",
+      "notes": "OHV / Resident Deputy / SEN SAR\r"
+    },
+    {
+      "id": "85950",
+      "plate": "16300950",
+      "makeModel": "Dinka Verus ATV",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "",
+      "purpose": "All Terrain Vehicle",
+      "notes": "OHV / Resident Deputy / SEN SAR\r"
+    },
+    {
+      "id": "85951",
+      "plate": "16300951",
+      "makeModel": "Dinka Verus ATV",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "",
+      "purpose": "All Terrain Vehicle",
+      "notes": "OHV / Resident Deputy / SEN SAR\r"
+    },
+    {
+      "id": "507324",
+      "plate": "16300324",
+      "makeModel": "Maibatsu Manchez Scout C",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "",
+      "purpose": "Off-Road Motorbike",
+      "notes": ""
+    },
+    {
+      "id": "507325",
+      "plate": "16300325",
+      "makeModel": "Manchez2",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "",
+      "purpose": "Off-Road Motorbike",
+      "notes": ""
+    },
+    {
+      "id": "507326",
+      "plate": "16300326",
+      "makeModel": "Manchez2",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "",
+      "purpose": "Off-Road Motorbike",
+      "notes": ""
+    },
+    {
+      "id": "557317",
+      "plate": "16300317",
+      "makeModel": "Nagasaki Outlaw Police Off-Road",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "",
+      "purpose": "Utility Task Vehicle",
+      "notes": "OHV / Resident Deputy / SEN SAR\r"
+    },
+    {
+      "id": "511573",
+      "plate": "16300573",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "SEN PERSONNEL",
+      "purpose": "SNOW CONDITIONS",
+      "notes": "FOR USE DURING WINTER / SNOW CONDITIONS"
+    },
+    {
+      "id": "45895",
+      "plate": "16300895",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "163",
+      "authorized": "SEN PERSONNEL",
+      "purpose": "SNOW CONDITIONS",
+      "notes": "FOR USE DURING WINTER / SNOW CONDITIONS"
+    },
+    {
+      "id": "2     —     SPECIAL OPERATIONS DIVISION",
+      "plate": "",
+      "makeModel": "",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "537475",
+      "plate": "12000475",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Division Chief Ruben Davenport",
+      "purpose": "SOD DIVISION CHIEF",
+      "notes": ""
+    },
+    {
+      "id": "570174",
+      "plate": "12000174",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Captain Ryan Herrera",
+      "purpose": "SEB UNIT COMMANDER",
+      "notes": ""
+    },
+    {
+      "id": "580717",
+      "plate": "12000717",
+      "makeModel": "Vapid Sandstorm Police Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Lieutenant Santiago Cortés",
+      "purpose": "SEB OPS LIEUTENANT",
+      "notes": ""
+    },
+    {
+      "id": "130410",
+      "plate": "12000410",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Sergeant Riley Ruiz",
+      "purpose": "CSD DETAIL COMMANDER",
+      "notes": "No transport/full dog kennel."
+    },
+    {
+      "id": "531405",
+      "plate": "12000405",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Deputy Sheriff Liberty Martin",
+      "purpose": "CSD TEAM LEADER",
+      "notes": "No transport/half dog kennel."
+    },
+    {
+      "id": "580716",
+      "plate": "12000716",
+      "makeModel": "Vapid Sandstorm Police Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "VACANT",
+      "purpose": "ESD DETAIL COMMANDER",
+      "notes": ""
+    },
+    {
+      "id": "111427",
+      "plate": "12000427",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Deputy Sheriff Christopher Young",
+      "purpose": "ESD TEAM LEADER",
+      "notes": ""
+    },
+    {
+      "id": "97305",
+      "plate": "12000305",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Deputy Sheriff Henry Kryger",
+      "purpose": "ESD CREW CHIEF",
+      "notes": ""
+    },
+    {
+      "id": "130407",
+      "plate": "12000407",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Lieutenant Eric Contreras",
+      "purpose": "SED DETAIL COMMANDER",
+      "notes": ""
+    },
+    {
+      "id": "44868",
+      "plate": "12000868",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Sergeant Beau Lawson",
+      "purpose": "SED BLUE TEAM LEADER (EM)",
+      "notes": ""
+    },
+    {
+      "id": "130412",
+      "plate": "12000412",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Sergeant Lorenzo Greco",
+      "purpose": "SED BLUE TEAM LEADER (PM)",
+      "notes": ""
+    },
+    {
+      "id": "571710",
+      "plate": "12000710",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Myles Escudero",
+      "purpose": "SED RED TEAM SCOUT (EM)",
+      "notes": ""
+    },
+    {
+      "id": "130411",
+      "plate": "12000411",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Sergeant Javier Escribano",
+      "purpose": "SED RED TEAM LEADER (PM)",
+      "notes": ""
+    },
+    {
+      "id": "111429",
+      "plate": "12000429",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Deputy Sheriff Luis Pineda",
+      "purpose": "SED RED TEAM SCOUT (PM)",
+      "notes": ""
+    },
+    {
+      "id": "576069",
+      "plate": "12000069",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Deputy Sheriff Nicholas Sutherland",
+      "purpose": "SED BLUE TEAM SCOUT (PM)",
+      "notes": ""
+    },
+    {
+      "id": "111428",
+      "plate": "12000428",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Deputy Sheriff Matthew Soto",
+      "purpose": "SED BLUE TEAM SCOUT (EM)",
+      "notes": ""
+    },
+    {
+      "id": "600727",
+      "plate": "12100727",
+      "makeModel": "Vapid Speedo Express Utility",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Veterinary Shared Vehicle",
+      "purpose": "Veterinary Team ",
+      "notes": ""
+    },
+    {
+      "id": "130935",
+      "plate": "12100935",
+      "makeModel": "Vapid Speedo Utility",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Veterinary Shared Vehicle",
+      "purpose": "Veterinary Team ",
+      "notes": ""
+    },
+    {
+      "id": "33553",
+      "plate": "12100553",
+      "makeModel": "Vapid Scout Security Slicktop",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Lara Henderson",
+      "purpose": "Veterinary Team ",
+      "notes": ""
+    },
+    {
+      "id": "33731",
+      "plate": "12100731",
+      "makeModel": "Vapid Scout Security Slicktop",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Veterinary Shared Vehicle",
+      "purpose": "Veterinary Team ",
+      "notes": ""
+    },
+    {
+      "id": "563834",
+      "plate": "12200834",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Sergeant Riley Ruiz",
+      "purpose": "243L",
+      "notes": "No transport, full dog kennel."
+    },
+    {
+      "id": "576065",
+      "plate": "12200065",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Liberty Martin",
+      "purpose": "241K91",
+      "notes": "No transport, full dog kennel."
+    },
+    {
+      "id": "108330",
+      "plate": "12200330",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Tim Julien",
+      "purpose": "240K92",
+      "notes": "No transport, full dog kennel."
+    },
+    {
+      "id": "531407",
+      "plate": "12200407",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Mireia Nunez",
+      "purpose": "240K93",
+      "notes": "Transport viable, 70/30 dog kennel."
+    },
+    {
+      "id": "563836",
+      "plate": "12200836",
+      "makeModel": "Bravado Buffalo S Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Gabriel Salas",
+      "purpose": "240K94",
+      "notes": "Transport viable, 70/30 dog kennel."
+    },
+    {
+      "id": "576063",
+      "plate": "12200063",
+      "makeModel": "Declasse Alamo Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Nasir Hayes",
+      "purpose": "240K95",
+      "notes": "Transport viable, 70/30 dog kennel."
+    },
+    {
+      "id": "585229",
+      "plate": "12200229",
+      "makeModel": "Bravado Buffalo S Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Deputy Sheriff Oscar Sanchez",
+      "purpose": "240K96",
+      "notes": "Transport viable, 70/30 dog kennel."
+    },
+    {
+      "id": "538512",
+      "plate": "12200512",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Vacant",
+      "purpose": "240K97",
+      "notes": "Transport viable, 70/30 dog kennel."
+    },
+    {
+      "id": "531406",
+      "plate": "12200406",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "SHARED - ALPR",
+      "notes": "No transport, full dog kennel."
+    },
+    {
+      "id": "576064",
+      "plate": "12200064",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED - ALPR",
+      "notes": "ALPR. No transport, full dog kennel."
+    },
+    {
+      "id": "608292",
+      "plate": "12200292",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "SHARED",
+      "notes": "No transport, full dog kennel."
+    },
+    {
+      "id": "580718",
+      "plate": "12200718",
+      "makeModel": "Vapid Sandstorm Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "DEPLOYMENT ONLY",
+      "notes": "DEPLOYMENT/EVENT USE ONLY"
+    },
+    {
+      "id": "124558",
+      "plate": "12300455",
+      "makeModel": "Declasse Alamo Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "SHARED",
+      "notes": ""
+    },
+    {
+      "id": "63393",
+      "plate": "12300393",
+      "makeModel": "Vapid Sadler Police Utility",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "PARAMEDIC DEPLOYMENT USE",
+      "notes": ""
+    },
+    {
+      "id": "41263",
+      "plate": "12300263",
+      "makeModel": "Vapid Sandstorm Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "DEPLOYMENT USE",
+      "notes": ""
+    },
+    {
+      "id": "64558",
+      "plate": "12300558",
+      "makeModel": "Vapid Sandstorm Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "DEPLOYMENT USE",
+      "notes": ""
+    },
+    {
+      "id": "65798",
+      "plate": "12300798",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "SHARED",
+      "notes": ""
+    },
+    {
+      "id": "65800",
+      "plate": "12300800",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "SHARED",
+      "notes": ""
+    },
+    {
+      "id": "72385",
+      "plate": "12300385",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "SHARED",
+      "notes": ""
+    },
+    {
+      "id": "104707",
+      "plate": "12300707",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "SHARED",
+      "notes": ""
+    },
+    {
+      "id": "104708",
+      "plate": "12300708",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "SHARED",
+      "notes": ""
+    },
+    {
+      "id": "77432",
+      "plate": "12300432",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "SHARED",
+      "notes": ""
+    },
+    {
+      "id": "44865",
+      "plate": "12400865",
+      "makeModel": "Vapid TARV",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Eugene Biskarrat Regional Training Center",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "74999",
+      "plate": "12400999",
+      "makeModel": "Vapid TARV",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Eugene Biskarrat Regional Training Center",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "75001",
+      "plate": "12400001",
+      "makeModel": "Vapid TARV",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Senora Sheriff's Station",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "44870",
+      "plate": "12400870",
+      "makeModel": "Vapid TARV",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Eugene Biskarrat Regional Training Center",
+      "purpose": "MEDCAT",
+      "notes": ""
+    },
+    {
+      "id": "59959",
+      "plate": "12400959",
+      "makeModel": "Vapid Executioner Police Utility",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Eugene Biskarrat Regional Training Center",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "59960",
+      "plate": "12400960",
+      "makeModel": "Vapid Executioner Police Utility",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Eugene Biskarrat Regional Training Center",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "561219",
+      "plate": "12400219",
+      "makeModel": "Nagasaki Outlaw Police Off-Road",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Eugene Biskarrat Regional Training Center",
+      "purpose": "DEPLOYMENT USE (TL+ PERM)",
+      "notes": ""
+    },
+    {
+      "id": "561220",
+      "plate": "12400220",
+      "makeModel": "Nagasaki Outlaw Police Off-Road",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Eugene Biskarrat Regional Training Center",
+      "purpose": "DEPLOYMENT USE (TL+ PERM)",
+      "notes": ""
+    },
+    {
+      "id": "561221",
+      "plate": "12400221",
+      "makeModel": "Nagasaki Outlaw Police Off-Road",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Eugene Biskarrat Regional Training Center",
+      "purpose": "DEPLOYMENT USE (TL+ PERM)",
+      "notes": ""
+    },
+    {
+      "id": "561222",
+      "plate": "12400222",
+      "makeModel": "Nagasaki Outlaw Police Off-Road",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Eugene Biskarrat Regional Training Center",
+      "purpose": "DEPLOYMENT USE (TL+ PERM)",
+      "notes": ""
+    },
+    {
+      "id": "531408",
+      "plate": "12500408",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TSPs",
+      "notes": ""
+    },
+    {
+      "id": "44864",
+      "plate": "12500864",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TSPs",
+      "notes": ""
+    },
+    {
+      "id": "44863",
+      "plate": "12500863",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TSPs",
+      "notes": ""
+    },
+    {
+      "id": "49728",
+      "plate": "12500728",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TSPs",
+      "notes": ""
+    },
+    {
+      "id": "49730",
+      "plate": "12500730",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TSPs",
+      "notes": ""
+    },
+    {
+      "id": "600714",
+      "plate": "12500714",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "K9 TSPs",
+      "notes": "SPLIT KENNEL (2 K9s)"
+    },
+    {
+      "id": "124559",
+      "plate": "12600559",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "DAVIS DECALS + ALPR"
+    },
+    {
+      "id": "124560",
+      "plate": "12600560",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": " ",
+      "purpose": "SHARED",
+      "notes": "DAVIS DECALS"
+    },
+    {
+      "id": "124553",
+      "plate": "12600553",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "SENORA DECALS + ALPR"
+    },
+    {
+      "id": "124554",
+      "plate": "12600554",
+      "makeModel": "Vapid Scout Police 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "SENORA DECALS"
+    },
+    {
+      "id": "48750",
+      "plate": "12600750",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "SLICKTOP MARKED + ALPR"
+    },
+    {
+      "id": "48751",
+      "plate": "12600751",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "SLICKTOP MARKED"
+    },
+    {
+      "id": "65796",
+      "plate": "12600796",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "DAVIS DECALS + ALPR"
+    },
+    {
+      "id": "65804",
+      "plate": "12600804",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "SENORA DECALS"
+    },
+    {
+      "id": "65805",
+      "plate": "12600805",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "SHERIFF DECALS"
+    },
+    {
+      "id": "65806",
+      "plate": "12600806",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "SHERIFF DECALS"
+    },
+    {
+      "id": "65807",
+      "plate": "12600807",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "SHERIFF DECALS"
+    },
+    {
+      "id": "124549",
+      "plate": "12600549",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "SHARED",
+      "notes": "SHERIFF DECALS"
+    },
+    {
+      "id": "104715",
+      "plate": "12700715",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "ARSON & EXPLOSIVES DETAIL",
+      "notes": ""
+    },
+    {
+      "id": "63392",
+      "plate": "12700392",
+      "makeModel": "Vapid Sadler Police Utility",
+      "alpr": false,
+      "ol": "",
+      "authorized": "-",
+      "purpose": "ARSON & EXPLOSIVES DETAIL",
+      "notes": ""
+    },
+    {
+      "id": "576060",
+      "plate": "12800060",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "A/SGT Keira Schultz",
+      "purpose": "CHIEF PILOT TAKEHOME",
+      "notes": ""
+    },
+    {
+      "id": "568264",
+      "plate": "12800264",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "SHARED",
+      "purpose": "SHARED TAKEHOME",
+      "notes": "RAPID RESPONSE VEHICLE"
+    },
+    {
+      "id": "576061",
+      "plate": "12800061",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Lieutenant Joel Lemoine",
+      "purpose": "U/C TAKEHOME",
+      "notes": ""
+    },
+    {
+      "id": "41652",
+      "plate": "N961SD",
+      "makeModel": "Buckingham Life Flight Maverick",
+      "alpr": false,
+      "ol": "128",
+      "authorized": "Flight Deputy",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "41653",
+      "plate": "N962SD",
+      "makeModel": "Buckingham Life Flight Maverick",
+      "alpr": false,
+      "ol": "128",
+      "authorized": "Flight Deputy",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "134965",
+      "plate": "N963SD",
+      "makeModel": "Buckingham Life Flight Maverick",
+      "alpr": false,
+      "ol": "128",
+      "authorized": "Flight Deputy",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "147028",
+      "plate": "N972LS",
+      "makeModel": "Buckingham Valkyrie",
+      "alpr": false,
+      "ol": "128",
+      "authorized": "Rescue Flight Deputy",
+      "purpose": "RESCUE 5",
+      "notes": ""
+    },
+    {
+      "id": "130778",
+      "plate": "N950MB",
+      "makeModel": "Jobuilt Velum (5-Seater)",
+      "alpr": false,
+      "ol": "128",
+      "authorized": "Event Vehicle",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "510820",
+      "plate": "N952JH",
+      "makeModel": "WesternAnnihilator",
+      "alpr": false,
+      "ol": "128",
+      "authorized": "Event Vehicle",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "521226",
+      "plate": "N931SD",
+      "makeModel": "Seasparrow2",
+      "alpr": false,
+      "ol": "128",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "519242",
+      "plate": "N932SD",
+      "makeModel": "Seasparrow2",
+      "alpr": false,
+      "ol": "128",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "537472",
+      "plate": "12900472",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "Deputy Sheriff Mitchell Choi",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "563837",
+      "plate": "12000837",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "SED POOL TAKEHOME",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "104717",
+      "plate": "12900471",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "Deputy Sheriff Caleb Wynn",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "537467",
+      "plate": "12900467",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "VACANT",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "537476",
+      "plate": "12900476",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "Deputy Sheriff Derek Ventura",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "575869",
+      "plate": "12900869",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "Deputy Sheriff Doug Caceres",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "575870",
+      "plate": "12900870",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "VACANT",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "571709",
+      "plate": "12900717",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "Deputy Sheriff Thomas Cole",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "537471",
+      "plate": "12900747",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "Deputy Sheriff Alejandro Flórez",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "65814",
+      "plate": "12900814",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "Deputy Sheriff Thomas Cho",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "537474",
+      "plate": "12900474",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "Deputy Sheriff Tyreke Leonard",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "104302",
+      "plate": "12900302",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "VACANT",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "537470",
+      "plate": "12900470",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "Deputy Sheriff Eric Tamayo",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "537473",
+      "plate": "12900473",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "Deputy Sheriff Irving Lockett",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "502347",
+      "plate": "12900347",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "VACANT",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "127971",
+      "plate": "12900971",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129A",
+      "authorized": "VACANT",
+      "purpose": "SED TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "66982",
+      "plate": "12900982",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129B",
+      "authorized": "Deputy Sheriff Tim Julien",
+      "purpose": "CSD TAKE HOME 240K92",
+      "notes": "Full dog kennel."
+    },
+    {
+      "id": "576067",
+      "plate": "12900067",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129B",
+      "authorized": "Deputy Sheriff Mireia Nunez",
+      "purpose": "CSD TAKE HOME 240K93",
+      "notes": "Full dog kennel."
+    },
+    {
+      "id": "576068",
+      "plate": "12900068",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129B",
+      "authorized": "Deputy Sheriff Hannah White",
+      "purpose": "CSD TAKE HOME 240K94",
+      "notes": "Full dog kennel."
+    },
+    {
+      "id": "563835",
+      "plate": "12900835",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129B",
+      "authorized": "Deputy Sheriff Nasir Hayes",
+      "purpose": "CSD TAKE HOME 240K95",
+      "notes": "Full dog kennel."
+    },
+    {
+      "id": "537478",
+      "plate": "12900478",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129B",
+      "authorized": "Deputy Sheriff Oscar Sanchez",
+      "purpose": "CSD TAKE HOME 240K96",
+      "notes": "Full dog kennel."
+    },
+    {
+      "id": "576066",
+      "plate": "12900066",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129B",
+      "authorized": "Vacant",
+      "purpose": "CSD TAKE HOME 240K97",
+      "notes": "Full dog kennel."
+    },
+    {
+      "id": "104716",
+      "plate": "12900716",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129B",
+      "authorized": "CSD POOL TAKEHOME",
+      "purpose": "CSD TAKE HOME ON-CALL",
+      "notes": "Full dog kennel."
+    },
+    {
+      "id": "571708",
+      "plate": "12900708",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129C",
+      "authorized": "VACANT",
+      "purpose": "ESD TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "571711",
+      "plate": "12900711",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129C",
+      "authorized": "Deputy Sheriff Mateo Tejada",
+      "purpose": "ESD TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "575871",
+      "plate": "12900871",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129C",
+      "authorized": "Deputy Sheriff Ralph Lebzelter",
+      "purpose": "ESD TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "519246",
+      "plate": "12900246",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129C",
+      "authorized": "Deputy Sheriff Jacob Kusiak",
+      "purpose": "ESD TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "65815",
+      "plate": "12900815",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129C",
+      "authorized": "Deputy Sheriff Benjamin Schiff",
+      "purpose": "ESD TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "66983",
+      "plate": "12900983",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129C",
+      "authorized": "Deputy Sheriff Mason Flores",
+      "purpose": "ESD TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "537468",
+      "plate": "12900468",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "129C",
+      "authorized": "Deputy Sheriff Ashlynn Hall",
+      "purpose": "ESD TAKE HOME",
+      "notes": ""
+    },
+    {
+      "id": "3     —     DETECTIVE DIVISION & INVESTIGATIVE SERVICES",
+      "plate": "",
+      "makeModel": "",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "561224",
+      "plate": "13000224",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Division Commander",
+      "notes": ""
+    },
+    {
+      "id": "41004",
+      "plate": "13000004",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "DMP Captain",
+      "notes": ""
+    },
+    {
+      "id": "579489",
+      "plate": "MYC634",
+      "makeModel": "Vapid Sandstorm Police Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "130",
+      "authorized": "Enforcement Operations Vehicle",
+      "purpose": "Detective Division ",
+      "notes": ""
+    },
+    {
+      "id": "579490",
+      "plate": "RJS122",
+      "makeModel": "Vapid Sandstorm Police Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "130",
+      "authorized": "Enforcement Operations Vehicle",
+      "purpose": "Detective Division ",
+      "notes": ""
+    },
+    {
+      "id": "544369",
+      "plate": "13100369",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "83419",
+      "plate": "13100419",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "33741",
+      "plate": "13100741",
+      "makeModel": "Vapid Scout Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Field Investigator",
+      "notes": ""
+    },
+    {
+      "id": "51358",
+      "plate": "13100358",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Field Investigator",
+      "notes": ""
+    },
+    {
+      "id": "561460",
+      "plate": "13100460",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "51360",
+      "plate": "13100360",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "57214",
+      "plate": "13100721",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Field Investigator",
+      "notes": ""
+    },
+    {
+      "id": "65819",
+      "plate": "13100819",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Field Investigator",
+      "notes": ""
+    },
+    {
+      "id": "77433",
+      "plate": "13100433",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "78469",
+      "plate": "13100469",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "121618",
+      "plate": "13100618",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Field Investigator",
+      "notes": ""
+    },
+    {
+      "id": "130418",
+      "plate": "13100418",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Alyson Wright",
+      "purpose": "Field Investigator",
+      "notes": ""
+    },
+    {
+      "id": "506199",
+      "plate": "13100199",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Lieutenant Alejandro Leyva",
+      "purpose": "Unit Commander",
+      "notes": ""
+    },
+    {
+      "id": "544370",
+      "plate": "13100370",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Field Investigator",
+      "notes": ""
+    },
+    {
+      "id": "544372",
+      "plate": "13100372",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Field Investigator",
+      "notes": ""
+    },
+    {
+      "id": "544373",
+      "plate": "13100373",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Field Investigator",
+      "notes": ""
+    },
+    {
+      "id": "561213",
+      "plate": "13100213",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "561214",
+      "plate": "13100214",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Field Investigator",
+      "notes": ""
+    },
+    {
+      "id": "561215",
+      "plate": "13100215",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "635366",
+      "plate": "13100366",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "587354",
+      "plate": "13200354",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Headquarters Operations Lieutenant",
+      "notes": ""
+    },
+    {
+      "id": "579493",
+      "plate": "13200493",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "579494",
+      "plate": "13200494",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "502353",
+      "plate": "13200235",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "62431",
+      "plate": "13200431",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "606111",
+      "plate": "13200111",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "587353",
+      "plate": "13200353",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "587355",
+      "plate": "13200355",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "606112",
+      "plate": "13200112",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "606113",
+      "plate": "13200113",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "606114",
+      "plate": "13200114",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "141589",
+      "plate": "13200589",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "141590",
+      "plate": "13200262",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "141591",
+      "plate": "13200591",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "600720",
+      "plate": "13200720",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "600719",
+      "plate": "13200719",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Canine Deputy",
+      "purpose": "",
+      "notes": "NARCOTICS"
+    },
+    {
+      "id": "606115",
+      "plate": "ASL419",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "132",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "127976",
+      "plate": "HYL779",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "132",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "72387",
+      "plate": "13400387",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "72388",
+      "plate": "13400388",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "104700",
+      "plate": "13400700",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "104701",
+      "plate": "13400701",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "563767",
+      "plate": "13400767",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "585240",
+      "plate": "13400240",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Commander Philip Turner",
+      "purpose": "TAKEHOME",
+      "notes": "AREA 1 COMMANDER"
+    },
+    {
+      "id": "561462",
+      "plate": "13400462",
+      "makeModel": "Vapid Sandstorm Police Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "TAKEHOME",
+      "notes": "INTERNAL AFFAIRS BUREAU CAPTAIN"
+    },
+    {
+      "id": "514512",
+      "plate": "13500512",
+      "makeModel": "Vapid Scout Security Slicktop",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Criminalists",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "514513",
+      "plate": "13500513",
+      "makeModel": "Vapid Scout Security Slicktop",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Criminalists",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "544368",
+      "plate": "13500368",
+      "makeModel": "Vapid Speedo Express Utility",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Criminalists",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "147531",
+      "plate": "13500531",
+      "makeModel": "Bravado Buffalo SX Security",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Digital Technician",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "104299",
+      "plate": "13500299",
+      "makeModel": "Declasse Alamo 2600LS Security Slicktop",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Division Director Yeosin Law",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "659525",
+      "plate": "13500525",
+      "makeModel": "Bravado Rumpo (News Van)",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Senior Digital Technician",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "659526",
+      "plate": "13500526",
+      "makeModel": "Bravado Buffalo SX Security",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Senior Digital Technician",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "659527",
+      "plate": "13500527",
+      "makeModel": "Vapid Scout Security Slicktop",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Supervising Analysts",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "41001",
+      "plate": "13600001",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Rodney Andrews",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "48754",
+      "plate": "13600754",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "48755",
+      "plate": "13600755",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "62432",
+      "plate": "13600432",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "62433",
+      "plate": "13600433",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Sergeant Esther Castellon",
+      "purpose": "Operations Sergeant",
+      "notes": ""
+    },
+    {
+      "id": "65792",
+      "plate": "13600792",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Jonathan Rake",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "80144",
+      "plate": "13600144",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Donald Cardoso",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "90193",
+      "plate": "13600193",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "90196",
+      "plate": "13600196",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "90198",
+      "plate": "13600198",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Kenneth Bennetts",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "121621",
+      "plate": "13600621",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "121627",
+      "plate": "13600627",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Cole Harrison",
+      "purpose": "Homicide Investigator (P)",
+      "notes": ""
+    },
+    {
+      "id": "127974",
+      "plate": "13600974",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Lieutenant Maria Moreno",
+      "purpose": "Unit Commander",
+      "notes": ""
+    },
+    {
+      "id": "130413",
+      "plate": "13600413",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Keilani Xu",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "502349",
+      "plate": "13600349",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Clara Alvarez",
+      "purpose": "Homicide Investigator",
+      "notes": ""
+    },
+    {
+      "id": "82863",
+      "plate": "13800863",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Sergeant Scott Freed",
+      "purpose": "Team Sergeant",
+      "notes": ""
+    },
+    {
+      "id": "130415",
+      "plate": "13800415",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Kiante Walters",
+      "purpose": "Snr. Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "89200",
+      "plate": "13800200",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Lieutenant Mark Cordero",
+      "purpose": "Unit Commander",
+      "notes": ""
+    },
+    {
+      "id": "502348",
+      "plate": "13800348",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Bernardino Arias",
+      "purpose": "Gang Canine Investigator",
+      "notes": ""
+    },
+    {
+      "id": "502350",
+      "plate": "13800350",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Sergeant Kevin Leong",
+      "purpose": "Team Sergeant",
+      "notes": ""
+    },
+    {
+      "id": "90194",
+      "plate": "13800194",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "90199",
+      "plate": "13800199",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "121619",
+      "plate": "13800619",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Tristan Hutchinson",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "77434",
+      "plate": "13800434",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "41003",
+      "plate": "13800003",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Rudy Galvez",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "41005",
+      "plate": "13800005",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective Miles Avila",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "113328",
+      "plate": "13800328",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "127973",
+      "plate": "13800973",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Detective John Matteson",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "157097",
+      "plate": "13800097",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "80170",
+      "plate": "13800170",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Enforcement Team",
+      "notes": ""
+    },
+    {
+      "id": "80171",
+      "plate": "13800171",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Enforcement Team",
+      "notes": ""
+    },
+    {
+      "id": "80172",
+      "plate": "13800172",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Enforcement Team",
+      "notes": ""
+    },
+    {
+      "id": "80173",
+      "plate": "13800173",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Enforcement Team",
+      "notes": ""
+    },
+    {
+      "id": "83421",
+      "plate": "13800421",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Enforcement Team",
+      "notes": ""
+    },
+    {
+      "id": "83422",
+      "plate": "13800422",
+      "makeModel": "Vapid Scout Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Enforcement Team",
+      "notes": ""
+    },
+    {
+      "id": "83423",
+      "plate": "13800423",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Enforcement Team",
+      "notes": ""
+    },
+    {
+      "id": "113326",
+      "plate": "13800326",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "OSSB Canine",
+      "purpose": "Gang Enforcement Team K9",
+      "notes": ""
+    },
+    {
+      "id": "121622",
+      "plate": "13800622",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Enforcement Team",
+      "notes": ""
+    },
+    {
+      "id": "600713",
+      "plate": "13800713",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "Deputy Sheriff Tyler Buchanan",
+      "purpose": "Gang Enforcement Team Leader",
+      "notes": ""
+    },
+    {
+      "id": "571705",
+      "plate": "13800705",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "599532",
+      "plate": "13800532",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Gang Investigator",
+      "notes": ""
+    },
+    {
+      "id": "5     —     ADMINISTRATIVE SERVICES DIVISION & INTERNAL SERVICES",
+      "plate": "",
+      "makeModel": "",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "33745",
+      "plate": "15000745",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": "EXECUTIVE STAFF"
+    },
+    {
+      "id": "89202",
+      "plate": "15000202",
+      "makeModel": "Vapid Scout Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": "EXECUTIVE STAFF"
+    },
+    {
+      "id": "104698",
+      "plate": "15000698",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": "EXECUTIVE STAFF"
+    },
+    {
+      "id": "104699",
+      "plate": "15000699",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": "EXECUTIVE STAFF"
+    },
+    {
+      "id": "130408",
+      "plate": "15000408",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": "EXECUTIVE STAFF"
+    },
+    {
+      "id": "113315",
+      "plate": "15100315",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "TB/Academy",
+      "purpose": "",
+      "notes": "Out of service Victor, EVOC Rims"
+    },
+    {
+      "id": "113316",
+      "plate": "15100316",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "TB/Academy",
+      "purpose": "",
+      "notes": "Out of service Victor, EVOC Rims"
+    },
+    {
+      "id": "130414",
+      "plate": "15100414",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Captain Victor Vargas",
+      "purpose": "",
+      "notes": "BASIC SERGEANT SUPERVISORY SCHOOL COORDINATOR"
+    },
+    {
+      "id": "554172",
+      "plate": "15100172",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "554425",
+      "plate": "15100425",
+      "makeModel": "Bravado Police Cruiser SX Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Captain Lisa Chan",
+      "purpose": "",
+      "notes": "TRAINING BUREAU UNIT COMMANDER"
+    },
+    {
+      "id": "554427",
+      "plate": "15100427",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Captain Martin Salerno",
+      "purpose": "",
+      "notes": "FIELD TRAINING PROGRAM COORDINATOR"
+    },
+    {
+      "id": "583573",
+      "plate": "15100573",
+      "makeModel": "Vapid Sandstorm Police Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Chief Ximena Navarro",
+      "purpose": "",
+      "notes": "DIVISION CHIEF"
+    },
+    {
+      "id": "583574",
+      "plate": "15100574",
+      "makeModel": "Vapid Sandstorm Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Restricted, TB CS, TB events",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "635367",
+      "plate": "15100367",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "64562",
+      "plate": "15200562",
+      "makeModel": "MTL Flatbed (Utility)",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Fleet Management Unit",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "64563",
+      "plate": "15200563",
+      "makeModel": "MTL Flatbed (Utility)",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Fleet Management Unit",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "569261",
+      "plate": "15200261",
+      "makeModel": "Vapid Yosemite Ramptruck",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Fleet Management Unit",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "569262",
+      "plate": "15200262",
+      "makeModel": "Vapid Yosemite Ramptruck",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Fleet Management Unit",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "568259",
+      "plate": "15200825",
+      "makeModel": "Bravado Buffalo SX Security",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Fleet Management Unit",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "141568",
+      "plate": "15300568",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "579491",
+      "plate": "15300491",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "579492",
+      "plate": "15300492",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "38805",
+      "plate": "15300805",
+      "makeModel": "Vapid Speedo Express Police Transporter",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "38806",
+      "plate": "15300806",
+      "makeModel": "Vapid Speedo Express Police Transporter",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "519243",
+      "plate": "15300243",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "33737",
+      "plate": "15300737",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": "MX7000"
+    },
+    {
+      "id": "104303",
+      "plate": "15300303",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "561223",
+      "plate": "15300223",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "124550",
+      "plate": "15300550",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "124551",
+      "plate": "15300551",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "65789",
+      "plate": "15300789",
+      "makeModel": "Declasse Alamo Pursuit Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "624982",
+      "plate": "15300982",
+      "makeModel": "Vapid Scout Security Slicktop",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "624983",
+      "plate": "15300983",
+      "makeModel": "Vapid Scout Security Slicktop",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "624984",
+      "plate": "15300984",
+      "makeModel": "Vapid Scout Security Slicktop",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "7     —     SPECIAL PURPOSE FLEET",
+      "plate": "",
+      "makeModel": "",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "128515",
+      "plate": "13500515",
+      "makeModel": "Vapid Speedo Express Utility",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "Criminalist",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "128516",
+      "plate": "13500516",
+      "makeModel": "Declasse Alamo 2600LS Security Slicktop",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "Bureau Director Alexandra Goes",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "147032",
+      "plate": "13500032",
+      "makeModel": "Vapid Scout Security Slicktop",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "Senior Criminalists",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "147034",
+      "plate": "EQR019",
+      "makeModel": "Declasse Premier",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "147038",
+      "plate": "WHV398",
+      "makeModel": "Obey Tailgater",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "157100",
+      "plate": "WEZ803",
+      "makeModel": "Vapid Speedo Express",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "505404",
+      "plate": "OOQ883",
+      "makeModel": "Karin Everon (Non-Arctic)",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "506327",
+      "plate": "PQA043",
+      "makeModel": "Albany Cavalcade",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "506328",
+      "plate": "NSP597",
+      "makeModel": "Vapid Minivan",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "506329",
+      "plate": "TID035",
+      "makeModel": "Declasse Yosemite (SUV)",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "531938",
+      "plate": "TZV966",
+      "makeModel": "Bravado Buffalo STX",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "531939",
+      "plate": "GVH879",
+      "makeModel": "Bravado Buffalo SX",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "531940",
+      "plate": "CST761",
+      "makeModel": "Übermacht Rebla GTS",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "531941",
+      "plate": "KPO249",
+      "makeModel": "Declasse Alamo Retro",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "531942",
+      "plate": "MPM201",
+      "makeModel": "Ubermacht Sentinel SG3 Wagon",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "531943",
+      "plate": "HPN898",
+      "makeModel": "Ubermacht Sentinel SG3 Sedan",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "531944",
+      "plate": "BZQ372",
+      "makeModel": "Bravado Gresley Hellhound",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "531945",
+      "plate": "JMO171",
+      "makeModel": "Vapid Torrence",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "531946",
+      "plate": "UNP878",
+      "makeModel": "Vapid Sadler",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "531947",
+      "plate": "JWH895",
+      "makeModel": "Bravado Youga Classic 4x4",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "589506",
+      "plate": "QSP940",
+      "makeModel": "Vapid Speedo",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "601634",
+      "plate": "RJX445",
+      "makeModel": "Declasse Alamo",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "639627",
+      "plate": "USF739",
+      "makeModel": "chavosv6",
+      "alpr": false,
+      "ol": "170",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "0     —     SHARED FLEET",
+      "plate": "",
+      "makeModel": "",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "600715",
+      "plate": "10100715",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "600716",
+      "plate": "10100716",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "600717",
+      "plate": "10100717",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "600724",
+      "plate": "10100724",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "600725",
+      "plate": "10100725",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "600726",
+      "plate": "10100726",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "600730",
+      "plate": "10100730",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "637131",
+      "plate": "10100131",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "637132",
+      "plate": "10100132",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "637133",
+      "plate": "10100133",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "637134",
+      "plate": "10100134",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "637135",
+      "plate": "10100135",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "637136",
+      "plate": "10100136",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "637137",
+      "plate": "10100137",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "637138",
+      "plate": "10100138",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "600731",
+      "plate": "10200731",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "DD / SEB CSP / CSB",
+      "purpose": "SHARED UNMARKED",
+      "notes": ""
+    },
+    {
+      "id": "637139",
+      "plate": "10200139",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "DD / SEB CSP / CSB",
+      "purpose": "SHARED UNMARKED",
+      "notes": ""
+    },
+    {
+      "id": "637148",
+      "plate": "BNA063",
+      "makeModel": "Vapid Scout Slicktop / Unmarked 2020",
+      "alpr": true,
+      "ol": "102",
+      "authorized": "DETECTIVE DIVISION",
+      "purpose": "SHARED UNMARKED / CIV PLATES",
+      "notes": ""
+    },
+    {
+      "id": "124561",
+      "plate": "OEI545",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "102",
+      "authorized": "DETECTIVE DIVISION",
+      "purpose": "SHARED UNMARKED / CIV PLATES",
+      "notes": ""
+    },
+    {
+      "id": "104687",
+      "plate": "ZXX748",
+      "makeModel": "Declasse Alamo Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "102",
+      "authorized": "DETECTIVE DIVISION",
+      "purpose": "SHARED UNMARKED / CIV PLATES",
+      "notes": ""
+    },
+    {
+      "id": "554371",
+      "plate": "NHT878",
+      "makeModel": "Bravado Buffalo S Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "102",
+      "authorized": "DETECTIVE DIVISION",
+      "purpose": "SHARED UNMARKED / CIV PLATES",
+      "notes": ""
+    },
+    {
+      "id": "531409",
+      "plate": "QDT150",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "102",
+      "authorized": "DETECTIVE DIVISION",
+      "purpose": "SHARED UNMARKED / CIV PLATES",
+      "notes": ""
+    },
+    {
+      "id": "63284",
+      "plate": "10300284",
+      "makeModel": "Brute Taco Van",
+      "alpr": false,
+      "ol": "",
+      "authorized": "PIO, LT+",
+      "purpose": "Public events,",
+      "notes": ""
+    },
+    {
+      "id": "33557",
+      "plate": "10300557",
+      "makeModel": "Dashound Coach (Prison Bus)",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Transport Bus",
+      "notes": ""
+    },
+    {
+      "id": "66970",
+      "plate": "10300970",
+      "makeModel": "Dashound Coach (Prison Bus)",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Transport Bus",
+      "notes": ""
+    },
+    {
+      "id": "104674",
+      "plate": "10300674",
+      "makeModel": "MTL Packer MOC/MCC",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "Eugene Biskarrat Regional Training Center",
+      "notes": ""
+    },
+    {
+      "id": "104675",
+      "plate": "10300675",
+      "makeModel": "MTL Packer MOC/MCC",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "104676",
+      "plate": "10300676",
+      "makeModel": "MTL Packer MOC/MCC",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "45346",
+      "plate": "10300346",
+      "makeModel": "Nagasaki Dinghy (4-Seater)",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "45856",
+      "plate": "10300856",
+      "makeModel": "Scorcher Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "45858",
+      "plate": "10300858",
+      "makeModel": "Scorcher Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "45859",
+      "plate": "10300859",
+      "makeModel": "InductorElectric Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "45860",
+      "plate": "10300860",
+      "makeModel": "InductorElectric Bike",
+      "alpr": false,
+      "ol": "",
+      "authorized": "",
+      "purpose": "",
+      "notes": ""
+    },
+    {
+      "id": "549959",
+      "plate": "10300959",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "TRAINING BUREAU / SEB",
+      "purpose": "TRAINING",
+      "notes": "TRAINING CAR WITH INDUSTRIAL BUMPERS"
+    },
+    {
+      "id": "40294",
+      "plate": "10300294",
+      "makeModel": "Vapid Speedo Express Police Transporter",
+      "alpr": false,
+      "ol": "",
+      "authorized": "ZEBRA UNITS",
+      "purpose": "TRANSPORT / UTILITY",
+      "notes": ""
+    },
+    {
+      "id": "40302",
+      "plate": "10300302",
+      "makeModel": "Polbufsx",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Lieutenant+",
+      "purpose": "Show vehicle.",
+      "notes": ""
+    },
+    {
+      "id": "65791",
+      "plate": "10300791",
+      "makeModel": "Polbufsx",
+      "alpr": false,
+      "ol": "",
+      "authorized": "Lieutenant+",
+      "purpose": "Show vehicle.",
+      "notes": ""
+    },
+    {
+      "id": "40995",
+      "plate": "ABW188",
+      "makeModel": "Declasse Moonbeam",
+      "alpr": false,
+      "ol": "100",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "40998",
+      "plate": "BWB601",
+      "makeModel": "Albany Esperanto",
+      "alpr": false,
+      "ol": "100",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "55223",
+      "plate": "FGL171",
+      "makeModel": "Albany Cavalcade",
+      "alpr": false,
+      "ol": "100",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "66976",
+      "plate": "KJA942",
+      "makeModel": "Vapid Torrence",
+      "alpr": false,
+      "ol": "100",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "104296",
+      "plate": "YDB093",
+      "makeModel": "Bravado Rumpo",
+      "alpr": false,
+      "ol": "100",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "587352",
+      "plate": "10000352",
+      "makeModel": "Vapid Torrence Police Interceptor Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS - TSD 17MAR2025",
+      "notes": "SURPLUS - TSD 17MAR2025"
+    },
+    {
+      "id": "506345",
+      "plate": "10000345",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS - TSD 17MAR2025",
+      "notes": "SURPLUS - TSD 17MAR2025"
+    },
+    {
+      "id": "522564",
+      "plate": "10000564",
+      "makeModel": "Vapid Stanier Police Cruiser Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS - TSD 17MAR2025",
+      "notes": "SURPLUS - TSD 17MAR2025"
+    },
+    {
+      "id": "48756",
+      "plate": "10000756",
+      "makeModel": "Vapid Stanier Police Cruiser",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS - SEN PATROL 17MAR25",
+      "notes": "SURPLUS - SEN PATROL 17MAR25"
+    },
+    {
+      "id": "104691",
+      "plate": "10000691",
+      "makeModel": "Declasse Alamo Police",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS",
+      "notes": "SURPLUS - SEN SUP 17MAR2025"
+    },
+    {
+      "id": "521227",
+      "plate": "10000227",
+      "makeModel": "Nagasaki Dinghy (4-Seater)",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS - SEN MARINE OPS - 17MAR25",
+      "notes": "SURPLUS - SEN MARINE OPS - 17MAR25"
+    },
+    {
+      "id": "600712",
+      "plate": "10000712",
+      "makeModel": "Declasse Alamo Pursuit Slicktop / Unmarked",
+      "alpr": true,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "521225",
+      "plate": "10000225",
+      "makeModel": "Vapid Executioner Police Utility",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "37461",
+      "plate": "10000461",
+      "makeModel": "Vapid Towtruck (Truck)",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "38799",
+      "plate": "10000799",
+      "makeModel": "Dinka Verus ATV",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "613800",
+      "plate": "10000800",
+      "makeModel": "Vapid Aleutian",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "606691",
+      "plate": "10000691",
+      "makeModel": "Vapid Sandstorm Police Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "606692",
+      "plate": "10000692",
+      "makeModel": "Vapid Sandstorm Police Slicktop / Unmarked",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "511621",
+      "plate": "10000621",
+      "makeModel": "Bravado Buffalo A/C",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "516214",
+      "plate": "10000214",
+      "makeModel": "Albany Presidente",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    },
+    {
+      "id": "578238",
+      "plate": "10000238",
+      "makeModel": "Dinka Hakumai",
+      "alpr": false,
+      "ol": "",
+      "authorized": "NO USE ALLOWED",
+      "purpose": "SURPLUS VEHICLE",
+      "notes": ""
+    }
+  ]
+}

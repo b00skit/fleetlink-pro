@@ -56,11 +56,23 @@ export default function Home() {
   const [selectedVehicle, setSelectedVehicle] = useState<string>(ANY_VALUE);
   const [prefixToCopy, setPrefixToCopy] = useState<string>("");
   const [activeAssignmentPill, setActiveAssignmentPill] = useState<string>("");
+  const [canSync, setCanSync] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
-  const canSync = useMemo(() => {
-    if (!lastSync) return true;
-    return new Date().getTime() - new Date(lastSync).getTime() > ONE_DAY_IN_MS;
-  }, [lastSync]);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (isClient) {
+      const checkCanSync = () => {
+        if (!lastSync) return true;
+        return new Date().getTime() - new Date(lastSync).getTime() > ONE_DAY_IN_MS;
+      };
+      setCanSync(checkCanSync());
+    }
+  }, [lastSync, isClient]);
+
 
   const loadData = async () => {
     setIsLoading(true);
@@ -275,7 +287,7 @@ export default function Home() {
               onFavoriteVehicleToggle={toggleFavoriteVehicle}
               onFavoriteAssignmentToggle={toggleFavoriteAssignment}
             />
-            <Button onClick={handleSync} disabled={!canSync || isSyncing} size="sm">
+            <Button onClick={handleSync} disabled={!canSync || isSyncing || !isClient} size="sm">
               {isSyncing ? (
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
               ) : (
