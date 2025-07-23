@@ -165,7 +165,7 @@ export default function Home() {
     setSelectedVehicle(ANY_VALUE);
     setActiveAssignmentPill("");
     if (value && value !== ANY_VALUE) {
-      const prefix = `1${value.substring(1, 4)}00`;
+      const prefix = `${value.substring(1, 4)}00`;
       setPrefixToCopy(prefix);
     } else {
       setPrefixToCopy("");
@@ -180,7 +180,7 @@ export default function Home() {
      } else {
        setActiveAssignmentPill(assignmentId);
        setSelectedAssignment(assignmentId);
-       const prefix = `1${assignmentId.substring(1, 4)}00`;
+       const prefix = `${assignmentId.substring(1, 4)}00`;
        setPrefixToCopy(prefix);
      }
   };
@@ -195,8 +195,14 @@ export default function Home() {
 
   const availableVehicles = useMemo(() => {
     if (!selectedAssignment || selectedAssignment === ANY_VALUE || !fleetData) return [];
-    const assignmentCode = selectedAssignment.substring(1);
-    const vehiclesInAssignment = fleetData.vehicles.filter(v => (v.ol || v.plate).startsWith(`1${assignmentCode}`));
+    
+    const prefix = selectedAssignment;
+    const vehiclesInAssignment = fleetData.vehicles.filter(v => {
+        const platePrefix = v.plate.substring(0, 3);
+        const olMatch = !v.ol || v.ol === prefix;
+        return platePrefix === prefix && olMatch;
+    });
+
     return [...new Set(vehiclesInAssignment.map(v => v.makeModel))].sort();
   }, [selectedAssignment, fleetData]);
 
@@ -204,17 +210,20 @@ export default function Home() {
     if (!fleetData) return [];
     
     let data = fleetData.vehicles;
+    const assignmentId = activeAssignmentPill || (selectedAssignment !== ANY_VALUE ? selectedAssignment : null);
 
-    if (activeAssignmentPill) {
-        const assignmentCode = activeAssignmentPill.substring(1);
-        data = data.filter(v => (v.ol).startsWith(`1${assignmentCode}`));
-    } else if (selectedAssignment && selectedAssignment !== ANY_VALUE) {
-        const assignmentCode = selectedAssignment.substring(1);
-        data = data.filter(v => (v.ol).startsWith(`1${assignmentCode}`));
-        if (selectedVehicle && selectedVehicle !== ANY_VALUE) {
+    if (assignmentId) {
+        const prefix = assignmentId;
+        data = data.filter(v => {
+            const platePrefix = v.plate.substring(0, 3);
+            const olMatch = !v.ol || v.ol === prefix;
+            return platePrefix === prefix && olMatch;
+        });
+
+        if (selectedVehicle && selectedVehicle !== ANY_VALUE && !activeAssignmentPill) {
             data = data.filter(v => v.makeModel === selectedVehicle);
         }
-    } else if (favoriteVehicles.length > 0 && !activeAssignmentPill) {
+    } else if (favoriteVehicles.length > 0) {
         // Default to showing favorite vehicles if no assignment is selected
         return [];
     }
@@ -228,20 +237,20 @@ export default function Home() {
   const mainTableData = useMemo(() => {
     if (!fleetData) return [];
 
-    // If a pill is active, filter by assignment
-    if(activeAssignmentPill) {
-      const assignmentCode = activeAssignmentPill.substring(1);
-      return fleetData.vehicles.filter(v => (v.ol).startsWith(`1${assignmentCode}`));
-    }
+    const assignmentId = activeAssignmentPill || (selectedAssignment !== ANY_VALUE ? selectedAssignment : null);
+    
+    if (assignmentId) {
+        const prefix = assignmentId;
+        let data = fleetData.vehicles.filter(v => {
+            const platePrefix = v.plate.substring(0, 3);
+            const olMatch = !v.ol || v.ol === prefix;
+            return platePrefix === prefix && olMatch;
+        });
 
-    // If an assignment is selected from dropdown, filter by it
-    if(selectedAssignment && selectedAssignment !== ANY_VALUE) {
-        let data = fleetData.vehicles;
-        const assignmentCode = selectedAssignment.substring(1);
-        data = data.filter(v => (v.ol).startsWith(`1${assignmentCode}`));
-        if (selectedVehicle && selectedVehicle !== ANY_VALUE) {
+        if (selectedVehicle && selectedVehicle !== ANY_VALUE && !activeAssignmentPill) {
             data = data.filter(v => v.makeModel === selectedVehicle);
         }
+
         return data;
     }
     
