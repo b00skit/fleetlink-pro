@@ -165,7 +165,7 @@ export default function Home() {
     setSelectedVehicle(ANY_VALUE);
     setActiveAssignmentPill("");
     if (value && value !== ANY_VALUE) {
-      const prefix = `${value.substring(1, 4)}00`;
+      const prefix = `${value}00`;
       setPrefixToCopy(prefix);
     } else {
       setPrefixToCopy("");
@@ -180,7 +180,7 @@ export default function Home() {
      } else {
        setActiveAssignmentPill(assignmentId);
        setSelectedAssignment(assignmentId);
-       const prefix = `${assignmentId.substring(1, 4)}00`;
+       const prefix = `${assignmentId}00`;
        setPrefixToCopy(prefix);
      }
   };
@@ -373,14 +373,6 @@ export default function Home() {
                           ))}
                         </SelectContent>
                       </Select>
-                      {prefixToCopy && (
-                        <div className="flex items-center gap-2 rounded-md border bg-muted p-2 text-sm">
-                           <span className="font-mono text-muted-foreground">Prefix: {prefixToCopy}</span>
-                           <Button variant="ghost" size="icon" className="h-6 w-6" onClick={copyToClipboard}>
-                             <Copy className="h-4 w-4" />
-                           </Button>
-                        </div>
-                      )}
                     </div>
                     <div className="flex flex-col gap-2">
                        <label className="text-sm font-medium">Vehicle</label>
@@ -397,6 +389,14 @@ export default function Home() {
                        </Select>
                     </div>
                   </div>
+                   {prefixToCopy && (
+                        <div className="flex items-center justify-center gap-2 rounded-md border bg-muted p-4 text-center">
+                           <span className="text-lg font-mono text-muted-foreground">Use the vehicle plate prefix: {prefixToCopy}</span>
+                           <Button variant="ghost" size="icon" className="h-8 w-8" onClick={copyToClipboard}>
+                             <Copy className="h-5 w-5" />
+                           </Button>
+                        </div>
+                      )}
                 </div>
 
                 <AnimatePresence>
