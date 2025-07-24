@@ -8,6 +8,6 @@ services:
     ports:
       - "3002:3000"
     env_file:
-      - .env
+      - stack.env
     container_name: fleetlink-pro-app
     restart: unless-stopped
