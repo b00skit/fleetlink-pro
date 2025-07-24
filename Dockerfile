@@ -15,7 +15,7 @@ COPY . .
 # Create data directory and initial json files
 RUN mkdir -p /app/public/data
 RUN echo '{"assignments":[],"vehicles":[]}' > /app/public/data/fleetData.json && \
-    echo '{"lastSync":"never"}' > /app/public/data/syncStatus.json
+    echo '{}' > /app/public/data/syncStatus.json
 
 RUN npm run build
 
