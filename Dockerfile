@@ -12,9 +12,10 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Environment variables can be built into the image like this:
-# ENV GEMINI_API_KEY=your_gemini_api_key
-# Or passed in at runtime
+# --- DEBUGGING STEP ---
+# This command will list all files and folders that have been copied.
+# If you don't see the 'public' folder in the output, your .dockerignore file is the problem.
+RUN echo "--- Listing files in the build context ---" && ls -R
 
 RUN npm run build
 
@@ -24,8 +25,11 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-# Copy necessary files from the builder stage
+# This command will fail if the 'public' folder was not present in the 'builder' stage.
 COPY --from=builder /app/public ./public
+
+# This command will fail if the build didn't produce a 'standalone' output.
+# Make sure your next.config.js has "output: 'standalone'".
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
