@@ -12,13 +12,10 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# --- TROUBLESHOOTING STEP ---
-# The command below ensures the 'public' directory exists before the build runs.
-# This will prevent the build from failing at the 'COPY ... /app/public' step later.
-# If the build succeeds with this change, but your running application is missing
-# images or styles, it confirms the problem is that your original 'public'
-# folder is not being included in the Docker build context by Portainer.
-RUN mkdir -p public
+# Create data directory and initial json files
+RUN mkdir -p /app/public/data
+RUN echo '{"assignments":[],"vehicles":[]}' > /app/public/data/fleetData.json && \
+    echo '{"lastSync":"never"}' > /app/public/data/syncStatus.json
 
 RUN npm run build
 
