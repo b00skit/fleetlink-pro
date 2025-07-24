@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3000"
+    env_file:
+      - .env
+    container_name: fleetlink-pro-app
+    restart: unless-stopped
