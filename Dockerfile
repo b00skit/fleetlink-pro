@@ -12,10 +12,13 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# --- DEBUGGING STEP ---
-# This command will list all files and folders that have been copied.
-# If you don't see the 'public' folder in the output, your .dockerignore file is the problem.
-RUN echo "--- Listing files in the build context ---" && ls -R
+# --- TROUBLESHOOTING STEP ---
+# The command below ensures the 'public' directory exists before the build runs.
+# This will prevent the build from failing at the 'COPY ... /app/public' step later.
+# If the build succeeds with this change, but your running application is missing
+# images or styles, it confirms the problem is that your original 'public'
+# folder is not being included in the Docker build context by Portainer.
+RUN mkdir -p public
 
 RUN npm run build
 
@@ -25,7 +28,8 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-# This command will fail if the 'public' folder was not present in the 'builder' stage.
+# This command will now succeed because the 'RUN mkdir -p public' command
+# in the previous stage guarantees the folder exists.
 COPY --from=builder /app/public ./public
 
 # This command will fail if the build didn't produce a 'standalone' output.
