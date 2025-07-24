@@ -28,12 +28,13 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-# This command will now succeed because the 'RUN mkdir -p public' command
-# in the previous stage guarantees the folder exists.
-COPY --from=builder /app/public ./public
+# Create a non-root user for security purposes
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
 
-# This command will fail if the build didn't produce a 'standalone' output.
-# Make sure your next.config.js has "output: 'standalone'".
+# Copy necessary files from the builder stage
+# The --chown flag ensures the new user owns the files
+COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
