@@ -13,8 +13,9 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 # Create data directory and initial json files
-RUN mkdir -p /app/public/data
-RUN echo '{"assignments":[],"vehicles":[]}' > /app/public/data/fleetData.json && \
+# These files will be owned by root in this stage, which is fine
+RUN mkdir -p /app/public/data && \
+    echo '{"assignments":[],"vehicles":[]}' > /app/public/data/fleetData.json && \
     echo '{}' > /app/public/data/syncStatus.json
 
 RUN npm run build
@@ -29,9 +30,12 @@ ENV NODE_ENV=production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-# Copy necessary files from the builder stage
-# The --chown flag ensures the new user owns the files
-COPY --from=builder /app/public ./public
+# --- THIS IS THE FIX ---
+# Copy the public directory and change its ownership to the new user
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+# ----------------------
+
+# Copy other necessary files from the builder stage, ensuring correct ownership
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
@@ -42,4 +46,5 @@ EXPOSE 3000
 USER nextjs
 
 # Start the app
+# The command should point to the server file within the standalone output
 CMD ["node", "server.js"]
