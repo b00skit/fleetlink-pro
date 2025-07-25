@@ -1,7 +1,6 @@
-
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { syncFleetData, getAdminData, updateAdminData } from "@/app/actions";
 import type { AdminData } from "@/lib/types";
@@ -14,7 +13,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { useToast } from "@/hooks/use-toast";
 import { Loader2, RefreshCw } from "lucide-react";
 
-export default function AdminPage() {
+function AdminComponent() {
   const { toast } = useToast();
   const searchParams = useSearchParams();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -185,4 +184,12 @@ export default function AdminPage() {
       </div>
     </div>
   );
+}
+
+export default function AdminPage() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <AdminComponent />
+        </Suspense>
+    )
 }
