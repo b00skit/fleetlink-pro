@@ -24,6 +24,42 @@ function AdminComponent() {
   });
   const [isSyncing, setIsSyncing] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+  const [isAuthenticating, setIsAuthenticating] = useState(false);
+
+
+  const handleTokenSubmit = async (submittedToken: string) => {
+    setIsAuthenticating(true);
+    try {
+      const response = await fetch('/api/auth/admin', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ token: submittedToken }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.success) {
+          setIsAuthenticated(true);
+          toast({ title: "Authentication successful." });
+        } else {
+          throw new Error(data.error || 'Invalid token');
+        }
+      } else {
+        const errorData = await response.json();
+        throw new Error(errorData.error || `Authentication failed with status: ${response.status}`);
+      }
+    } catch (error: any) {
+      toast({
+        variant: "destructive",
+        title: "Authentication failed.",
+        description: error.message || "An unexpected error occurred.",
+      });
+    } finally {
+        setIsAuthenticating(false);
+    }
+  };
 
   useEffect(() => {
     // Allows for providing token via query param for ease of use
@@ -39,21 +75,7 @@ function AdminComponent() {
     }
   }, [isAuthenticated]);
 
-  const handleTokenSubmit = (submittedToken: string) => {
-    // In a real app, this would be a fetch call to a backend endpoint.
-    // For this prototype, we'll just check against an environment variable.
-    // This is not secure for production.
-    if (submittedToken === process.env.NEXT_PUBLIC_ADMIN_TOKEN) {
-      setIsAuthenticated(true);
-      toast({ title: "Authentication successful." });
-    } else {
-      toast({
-        variant: "destructive",
-        title: "Authentication failed.",
-        description: "The provided token is incorrect.",
-      });
-    }
-  };
+
 
   const handleSync = async () => {
     setIsSyncing(true);
@@ -117,9 +139,11 @@ function AdminComponent() {
                             value={token}
                             onChange={(e) => setToken(e.target.value)}
                             placeholder="Enter token..."
+                            disabled={isAuthenticating}
                         />
                     </div>
-                    <Button type="submit" className="w-full">
+                    <Button type="submit" className="w-full" disabled={isAuthenticating}>
+                        {isAuthenticating ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
                         Authenticate
                     </Button>
                 </form>

@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useMemo, useEffect, useCallback } from "react";
@@ -178,7 +177,7 @@ export default function Home() {
     setSelectedVehicle(""); 
     if (newValue) {
       const assignment = fleetData?.assignments.find(a => a.id === newValue);
-      const prefix = assignment ? assignment.id.substring(1) + "00" : "";
+      const prefix = assignment ? assignment.id.substring(0, 3) + "00" : "";
       setPrefixToCopy(prefix);
     } else {
       setPrefixToCopy("");
@@ -207,10 +206,10 @@ export default function Home() {
     const assignment = fleetData.assignments.find(a => a.id === selectedAssignment);
     if(!assignment) return [];
 
-    const prefix = assignment.id.substring(1);
+    const prefix = assignment.id.substring(0, 3);
     const vehiclesInAssignment = fleetData.vehicles.filter(v => {
-        const olMatch = v.ol === prefix;
-        const platePrefixMatch = v.plate.substring(0, prefix.length) === prefix;
+        const olMatch = v.ol.startsWith(prefix);
+        const platePrefixMatch = v.plate.startsWith(prefix);
         return olMatch || platePrefixMatch;
     });
 
@@ -223,10 +222,10 @@ export default function Home() {
     if (activeAssignmentPill) {
         const assignment = fleetData.assignments.find(a => a.id === activeAssignmentPill);
         if(!assignment) return [];
-        const prefix = assignment.id.substring(1);
+        const prefix = assignment.id.substring(0, 3);
         return fleetData.vehicles.filter(v => {
-            const olMatch = v.ol === prefix;
-            const platePrefixMatch = v.plate.substring(0, prefix.length) === prefix;
+            const olMatch = v.ol.startsWith(prefix);
+            const platePrefixMatch = v.plate.startsWith(prefix);
             return olMatch || platePrefixMatch;
         });
     }
@@ -246,10 +245,10 @@ export default function Home() {
     const assignment = fleetData.assignments.find(a => a.id === assignmentId);
     if(!assignment) return [];
 
-    const prefix = assignment.id.substring(1);
+    const prefix = assignment.id.substring(0, 3);
     let data = fleetData.vehicles.filter(v => {
-         const olMatch = v.ol === prefix;
-         const platePrefixMatch = v.plate.substring(0, prefix.length) === prefix;
+         const olMatch = v.ol.startsWith(prefix);
+         const platePrefixMatch = v.plate.startsWith(prefix);
          return olMatch || platePrefixMatch;
     });
 
