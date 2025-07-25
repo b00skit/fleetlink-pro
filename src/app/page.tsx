@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useMemo, useEffect, useCallback } from "react";
@@ -154,8 +155,8 @@ export default function Home() {
     }
     setFavoriteAssignmentIds(newFavorites);
      if (activeAssignmentPill === assignmentId && !newFavorites.has(assignmentId)) {
-       setActiveAssignmentPill("");
-     }
+      setActiveAssignmentPill("");
+    }
   };
 
   const favoriteAssignments = useMemo(
@@ -177,10 +178,7 @@ export default function Home() {
     setSelectedVehicle(""); 
     if (newValue) {
       const assignment = fleetData?.assignments.find(a => a.id === newValue);
-      // --- FIX ---
-      // This prefix MUST be derived from the part of the ID that is used for filtering (`substring(1)`)
-      // to ensure the displayed prefix is consistent with the filtered data.
-      const prefix = assignment ? assignment.id.substring(1) + "00" : "";
+      const prefix = assignment ? assignment.id + "00" : "";
       setPrefixToCopy(prefix);
     } else {
       setPrefixToCopy("");
@@ -203,54 +201,64 @@ export default function Home() {
     });
   };
 
-  const getFilteredVehiclesByAssignment = useCallback((assignmentId: string | null): Vehicle[] => {
-    if (!fleetData || !assignmentId) {
-      return [];
-    }
-
-    const assignment = fleetData.assignments.find(a => a.id === assignmentId);
-    if (!assignment) {
-      return [];
-    }
-
-    // The correct prefix for filtering is the original assignment ID from the sheet,
-    // which we get by removing the leading "1".
-    const filterPrefix = assignment.id.substring(1);
-    
-    if (!filterPrefix) {
-      return [];
-    }
-
-    return fleetData.vehicles.filter(vehicle => {
-      const olMatch = vehicle.ol === filterPrefix;
-      const platePrefixMatch = vehicle.plate.startsWith(filterPrefix);
-      return olMatch || platePrefixMatch;
-    });
-  }, [fleetData]);
-
   const availableVehicles = useMemo(() => {
-    const vehiclesInAssignment = getFilteredVehiclesByAssignment(selectedAssignment);
+    if (!selectedAssignment || !fleetData) return [];
+    
+    const assignment = fleetData.assignments.find(a => a.id === selectedAssignment);
+    if(!assignment) return [];
+
+    const prefix = assignment.id.substring(1);
+    const vehiclesInAssignment = fleetData.vehicles.filter(v => {
+        const olMatch = v.ol === prefix;
+        const platePrefixMatch = v.plate.substring(0, prefix.length) === prefix;
+        return olMatch || platePrefixMatch;
+    });
+
     return [...new Set(vehiclesInAssignment.map(v => v.makeModel))].sort();
-  }, [selectedAssignment, getFilteredVehiclesByAssignment]);
+  }, [selectedAssignment, fleetData]);
 
   const favoritesTableData = useMemo(() => {
-    if (!activeAssignmentPill) {
-      return favoriteVehicles;
+    if (!fleetData) return [];
+
+    if (activeAssignmentPill) {
+        const assignment = fleetData.assignments.find(a => a.id === activeAssignmentPill);
+        if(!assignment) return [];
+        const prefix = assignment.id.substring(1);
+        return fleetData.vehicles.filter(v => {
+            const olMatch = v.ol === prefix;
+            const platePrefixMatch = v.plate.substring(0, prefix.length) === prefix;
+            return olMatch || platePrefixMatch;
+        });
     }
-    return getFilteredVehiclesByAssignment(activeAssignmentPill);
-  }, [activeAssignmentPill, favoriteVehicles, getFilteredVehiclesByAssignment]);
+    return favoriteVehicles;
+  }, [fleetData, activeAssignmentPill, favoriteVehicles]);
 
 
   const mainTableData = useMemo(() => {
-    let filteredData = getFilteredVehiclesByAssignment(selectedAssignment);
+    if (!fleetData) return [];
+    
+    const assignmentId = selectedAssignment ? selectedAssignment : null;
 
-    if (selectedVehicle && selectedVehicle !== ANY_VALUE) {
-        filteredData = filteredData.filter(v => v.makeModel === selectedVehicle);
+    if (!assignmentId) {
+        return [];
     }
     
-    return filteredData;
+    const assignment = fleetData.assignments.find(a => a.id === assignmentId);
+    if(!assignment) return [];
 
-  }, [selectedAssignment, selectedVehicle, getFilteredVehiclesByAssignment]);
+    const prefix = assignment.id.substring(1);
+    let data = fleetData.vehicles.filter(v => {
+         const olMatch = v.ol === prefix;
+         const platePrefixMatch = v.plate.substring(0, prefix.length) === prefix;
+         return olMatch || platePrefixMatch;
+    });
+
+    if (selectedVehicle && selectedVehicle !== ANY_VALUE) {
+        data = data.filter(v => v.makeModel === selectedVehicle);
+    }
+    return data;
+
+  }, [fleetData, selectedAssignment, selectedVehicle]);
   
   const columns = useMemo(
     () => getColumns(favoriteVehicleIds, toggleFavoriteVehicle),
@@ -335,14 +343,14 @@ export default function Home() {
                                 variant={activeAssignmentPill === a.id ? "default" : "secondary"}
                                 className="cursor-pointer"
                                 onClick={() => handlePillClick(a.id)}
-                              >
+                            >
                                 {a.name}
                             </Badge>
                         )) : <span className="text-sm text-muted-foreground italic">No favorite assignments yet. Star one from the dropdown below.</span>}
                     </div>
                  </div>
                  <Separator />
-               {favoritesTableData.length > 0 ? (
+                {favoritesTableData.length > 0 ? (
                   <DataTable columns={favoriteColumns} data={favoritesTableData} />
                 ) : (
                   <div className="text-center text-muted-foreground py-8">
@@ -386,25 +394,25 @@ export default function Home() {
                     <div className="flex flex-col gap-2">
                        <label className="text-sm font-medium">Vehicle</label>
                        <SearchableSelect
-                         value={selectedVehicle}
-                         onChange={(value) => setSelectedVehicle(value || "")}
-                         options={vehicleOptions}
-                         placeholder="Select a vehicle..."
-                         searchPlaceholder="Search vehicles..."
-                         emptyPlaceholder="No vehicles found."
-                         disabled={!selectedAssignment}
-                       />
+                          value={selectedVehicle}
+                          onChange={(value) => setSelectedVehicle(value || "")}
+                          options={vehicleOptions}
+                          placeholder="Select a vehicle..."
+                          searchPlaceholder="Search vehicles..."
+                          emptyPlaceholder="No vehicles found."
+                          disabled={!selectedAssignment}
+                        />
                     </div>
                   </div>
                    {prefixToCopy && (
                       <div className="flex items-center justify-center gap-4 rounded-lg border bg-muted/50 p-6 text-center">
                           <span className="text-lg text-muted-foreground">Use the vehicle plate prefix:</span>
                           <span 
-                            className="text-5xl font-bold font-mono bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text"
-                            style={{ textShadow: '0 0 1px hsl(var(--foreground) / 0.2)' }}
-                           >
-                            {prefixToCopy}
-                          </span>
+                              className="text-5xl font-bold font-mono bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text"
+                              style={{ textShadow: '0 0 1px hsl(var(--foreground) / 0.2)' }}
+                            >
+                              {prefixToCopy}
+                            </span>
                           <Button 
                             variant="ghost" 
                             size="icon" 
