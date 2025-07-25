@@ -44,7 +44,7 @@ export default function AdminPage() {
     // In a real app, this would be a fetch call to a backend endpoint.
     // For this prototype, we'll just check against an environment variable.
     // This is not secure for production.
-    if (submittedToken === process.env.NEXT_PUBLIC_ADMIN_TOKEN) {
+    if (submittedToken === process.env.ADMIN_TOKEN) {
       setIsAuthenticated(true);
       toast({ title: "Authentication successful." });
     } else {
@@ -173,7 +173,7 @@ export default function AdminPage() {
                         id="show-public-message"
                         checked={adminData.showPublicMessage}
                         onCheckedChange={(checked) => setAdminData({ ...adminData, showPublicMessage: checked })}
-                    />
+                    // />
                     <Label htmlFor="show-public-message">Show message on public page</Label>
                 </div>
                 <Button onClick={handleSaveSettings} disabled={isSaving}>
