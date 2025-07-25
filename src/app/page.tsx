@@ -11,26 +11,27 @@ import {
   Sparkles,
   Star,
   RefreshCw,
+  Info,
 } from "lucide-react";
 import { getColumns } from "@/components/fleet/columns";
 import { DataTable } from "@/components/fleet/data-table";
 import { useToast } from "@/hooks/use-toast";
 import { useLocalStorage } from "@/hooks/use-local-storage";
-import { syncFleetData, getSyncStatus } from "@/app/actions";
-import type { Vehicle, Assignment, FleetData } from "@/lib/types";
+import { syncFleetData, getSyncStatus, getAdminData } from "@/app/actions";
+import type { Vehicle, Assignment, FleetData, AdminData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { SearchableSelect } from "@/components/ui/searchable-select";
-
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 const ANY_VALUE = "any-value-placeholder";
-
 
 export default function Home() {
   const { toast } = useToast();
   const [fleetData, setFleetData] = useState<FleetData | null>(null);
+  const [adminData, setAdminData] = useState<AdminData | null>(null);
   const [canSync, setCanSync] = useState(false);
   const [
     favoriteVehicleIds,
@@ -59,8 +60,16 @@ export default function Home() {
         setCanSync(status.canSync);
     } catch (error) {
         console.error("Failed to fetch sync status:", error);
-        // Fallback to a safe default if server is unreachable
         setCanSync(false);
+    }
+  }, []);
+
+  const fetchAdminData = useCallback(async () => {
+    try {
+        const data = await getAdminData();
+        setAdminData(data);
+    } catch (error) {
+        console.error("Failed to fetch admin data:", error);
     }
   }, []);
 
@@ -112,7 +121,6 @@ export default function Home() {
         title: "Error",
         description: error.message || "Failed to sync fleet data.",
       });
-       // Re-fetch status to get the correct state from the server
       await fetchSyncStatus();
     } finally {
       setIsSyncing(false);
@@ -122,9 +130,10 @@ export default function Home() {
   useEffect(() => {
     if(isClient) {
         fetchSyncStatus();
+        fetchAdminData();
         loadData();
     }
-  }, [isClient, fetchSyncStatus]);
+  }, [isClient, fetchSyncStatus, fetchAdminData]);
 
 
   const toggleFavoriteVehicle = (vehicleId: string) => {
@@ -166,9 +175,10 @@ export default function Home() {
   const handleAssignmentChange = (value?: string) => {
     const newValue = value || "";
     setSelectedAssignment(newValue);
-    setSelectedVehicle(""); // Reset vehicle selection when assignment changes
+    setSelectedVehicle(""); 
     if (newValue) {
-      const prefix = `${newValue}00`;
+      const assignment = fleetData?.assignments.find(a => a.id === newValue);
+      const prefix = assignment ? assignment.id.substring(1) + "00" : "";
       setPrefixToCopy(prefix);
     } else {
       setPrefixToCopy("");
@@ -177,9 +187,9 @@ export default function Home() {
 
   const handlePillClick = (assignmentId: string) => {
      if (activeAssignmentPill === assignmentId) {
-       setActiveAssignmentPill(""); // Toggle off
+       setActiveAssignmentPill(""); 
      } else {
-       setActiveAssignmentPill(assignmentId); // Toggle on
+       setActiveAssignmentPill(assignmentId);
      }
   };
   
@@ -194,7 +204,10 @@ export default function Home() {
   const availableVehicles = useMemo(() => {
     if (!selectedAssignment || !fleetData) return [];
     
-    const prefix = selectedAssignment;
+    const assignment = fleetData.assignments.find(a => a.id === selectedAssignment);
+    if(!assignment) return [];
+
+    const prefix = assignment.id.substring(1);
     const vehiclesInAssignment = fleetData.vehicles.filter(v => {
         const olMatch = v.ol === prefix;
         const platePrefixMatch = v.plate.substring(0, prefix.length) === prefix;
@@ -208,13 +221,15 @@ export default function Home() {
     if (!fleetData) return [];
 
     if (activeAssignmentPill) {
+        const assignment = fleetData.assignments.find(a => a.id === activeAssignmentPill);
+        if(!assignment) return [];
+        const prefix = assignment.id.substring(1);
         return fleetData.vehicles.filter(v => {
-            const olMatch = v.ol === activeAssignmentPill;
-            const platePrefixMatch = v.plate.substring(0, activeAssignmentPill.length) === activeAssignmentPill;
+            const olMatch = v.ol === prefix;
+            const platePrefixMatch = v.plate.substring(0, prefix.length) === prefix;
             return olMatch || platePrefixMatch;
         });
     }
-    // If no pill is active, show individually favorited vehicles
     return favoriteVehicles;
   }, [fleetData, activeAssignmentPill, favoriteVehicles]);
 
@@ -225,11 +240,13 @@ export default function Home() {
     const assignmentId = selectedAssignment ? selectedAssignment : null;
 
     if (!assignmentId) {
-        // If no assignment is selected in the dropdown, the main table is empty.
         return [];
     }
     
-    const prefix = assignmentId;
+    const assignment = fleetData.assignments.find(a => a.id === assignmentId);
+    if(!assignment) return [];
+
+    const prefix = assignment.id.substring(1);
     let data = fleetData.vehicles.filter(v => {
          const olMatch = v.ol === prefix;
          const platePrefixMatch = v.plate.substring(0, prefix.length) === prefix;
@@ -297,6 +314,18 @@ export default function Home() {
 
       <main className="container mx-auto p-4 md:p-8">
         <div className="grid gap-8">
+            {adminData?.showPublicMessage && adminData.publicMessage && (
+              <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
+                <Alert>
+                  <Info className="h-4 w-4" />
+                  <AlertTitle>Public Announcement</AlertTitle>
+                  <AlertDescription>
+                    {adminData.publicMessage}
+                  </AlertDescription>
+                </Alert>
+              </motion.div>
+            )}
+
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <Card>
               <CardHeader>
@@ -429,4 +458,3 @@ export default function Home() {
     </div>
   );
 }
-    

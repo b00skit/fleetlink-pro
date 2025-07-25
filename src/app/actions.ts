@@ -3,7 +3,7 @@
 
 import { google } from "googleapis";
 import { recommendVehiclesAssignments, type RecommendVehiclesAssignmentsInput } from "@/ai/flows/recommend-vehicles-assignments";
-import type { FleetData, Assignment, Vehicle, SyncStatus } from "@/lib/types";
+import type { FleetData, Assignment, Vehicle, SyncStatus, AdminData } from "@/lib/types";
 import { promises as fs } from 'fs';
 import path from 'path';
 
@@ -11,21 +11,35 @@ const ONE_DAY_IN_MS = 24 * 60 * 60 * 1000;
 const DATA_DIR_PATH = path.join(process.cwd(), 'public', 'data');
 const FLEET_DATA_PATH = path.join(DATA_DIR_PATH, 'fleetData.json');
 const SYNC_STATUS_PATH = path.join(DATA_DIR_PATH, 'syncStatus.json');
+const ADMIN_DATA_PATH = path.join(DATA_DIR_PATH, 'admin.json');
 
-async function readSyncStatus(): Promise<SyncStatus> {
+async function readJsonFile<T>(filePath: string, defaultValue: T): Promise<T> {
   try {
     await fs.mkdir(DATA_DIR_PATH, { recursive: true });
-    const data = await fs.readFile(SYNC_STATUS_PATH, 'utf-8');
+    const data = await fs.readFile(filePath, 'utf-8');
     return JSON.parse(data);
   } catch (error) {
-    // If file doesn't exist or is invalid, return default status
-    return { lastSync: null, canSync: true };
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+      await fs.writeFile(filePath, JSON.stringify(defaultValue, null, 2));
+      return defaultValue;
+    }
+    console.error(`Error reading or creating ${path.basename(filePath)}:`, error);
+    return defaultValue;
   }
 }
 
-async function writeSyncStatus(status: SyncStatus): Promise<void> {
+async function writeJsonFile<T>(filePath: string, data: T): Promise<void> {
   await fs.mkdir(DATA_DIR_PATH, { recursive: true });
-  await fs.writeFile(SYNC_STATUS_PATH, JSON.stringify(status, null, 2));
+  await fs.writeFile(filePath, JSON.stringify(data, null, 2));
+}
+
+// Sync Status Functions
+async function readSyncStatus(): Promise<SyncStatus> {
+  return readJsonFile(SYNC_STATUS_PATH, { lastSync: null, canSync: true });
+}
+
+async function writeSyncStatus(status: SyncStatus): Promise<void> {
+  await writeJsonFile(SYNC_STATUS_PATH, status);
 }
 
 export async function getSyncStatus(): Promise<SyncStatus> {
@@ -37,11 +51,19 @@ export async function getSyncStatus(): Promise<SyncStatus> {
     return { lastSync: null, canSync: true };
 }
 
+// Admin Data Functions
+export async function getAdminData(): Promise<AdminData> {
+    return readJsonFile(ADMIN_DATA_PATH, { publicMessage: '', showPublicMessage: false });
+}
 
-export async function syncFleetData(): Promise<FleetData> {
+export async function updateAdminData(data: AdminData): Promise<void> {
+    await writeJsonFile(ADMIN_DATA_PATH, data);
+}
+
+export async function syncFleetData({ isAdmin = false } = {}): Promise<FleetData> {
   const syncStatus = await readSyncStatus();
 
-  if (syncStatus.lastSync && (new Date().getTime() - new Date(syncStatus.lastSync).getTime() < ONE_DAY_IN_MS)) {
+  if (!isAdmin && syncStatus.lastSync && (new Date().getTime() - new Date(syncStatus.lastSync).getTime() < ONE_DAY_IN_MS)) {
     throw new Error("Sync is only allowed once every 24 hours.");
   }
 

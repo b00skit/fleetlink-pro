@@ -24,3 +24,8 @@ export interface SyncStatus {
   lastSync: string | null;
   canSync: boolean;
 }
+
+export interface AdminData {
+  publicMessage: string;
+  showPublicMessage: boolean;
+}

@@ -16,7 +16,8 @@ COPY . .
 # These files will be owned by root in this stage, which is fine
 RUN mkdir -p /app/public/data && \
     echo '{"assignments":[],"vehicles":[]}' > /app/public/data/fleetData.json && \
-    echo '{}' > /app/public/data/syncStatus.json
+    echo '{}' > /app/public/data/syncStatus.json && \
+    echo '{}' > /app/public/data/admin.json
 
 RUN npm run build
 
