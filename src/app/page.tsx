@@ -178,7 +178,7 @@ export default function Home() {
     setSelectedVehicle(""); 
     if (newValue) {
       const assignment = fleetData?.assignments.find(a => a.id === newValue);
-      const prefix = assignment ? assignment.id + "00" : "";
+      const prefix = assignment ? assignment.id.substring(1) + "00" : "";
       setPrefixToCopy(prefix);
     } else {
       setPrefixToCopy("");
