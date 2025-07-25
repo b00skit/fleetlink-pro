@@ -173,7 +173,7 @@ export default function AdminPage() {
                         id="show-public-message"
                         checked={adminData.showPublicMessage}
                         onCheckedChange={(checked) => setAdminData({ ...adminData, showPublicMessage: checked })}
-                    // />
+                    />
                     <Label htmlFor="show-public-message">Show message on public page</Label>
                 </div>
                 <Button onClick={handleSaveSettings} disabled={isSaving}>
